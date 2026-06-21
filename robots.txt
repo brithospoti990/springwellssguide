@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+# Keep cloaked affiliate redirects out of the index
+Disallow: /go/
+
+Sitemap: https://springwellssguide.com/sitemap.xml

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/springwell-water-softener-reviews",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/go/springwell-softener",
+      "destination": "https://www.springwellwater.com/product/water-softeners/salt-water-softeners/?oid=9&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/go/springwell-cf",
+      "destination": "https://www.springwellwater.com/product/water-filters/whole-house-water-filters/?oid=1&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/go/springwell-combo",
+      "destination": "https://www.springwellwater.com/product/dual-systems/water-filter-salt-softener/?oid=10&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/go/springwell-2in1",
+      "destination": "https://www.springwellwater.com/product/dual-systems/2-in-1-filter-salt-softener-combo-system/?oid=21&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/go/springwell-futuresoft",
+      "destination": "https://www.springwellwater.com/product/water-softeners/salt-free-water-softeners/?oid=2&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/go/springwell-well",
+      "destination": "https://www.springwellwater.com/product/well-water/ultra-whole-house-well-water-filter-salt-based-system-combo/?oid=22&affid=40",
+      "permanent": false
+    }
+  ]
+}

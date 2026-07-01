@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hard Water Effects on Plumbing: Damage &amp; Fixes</title>
+<meta name="description" content="Hard water effects on plumbing explained — how scale builds in pipes, drops pressure, and damages copper, PEX, and galvanized lines, plus how to protect them.">
+<link rel="canonical" href="https://springwellssguide.com/hard-water-effects-on-plumbing">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Hard Water Effects on Plumbing: Damage &amp; Fixes">
+<meta property="og:description" content="How hard water scales pipes, cuts water pressure, and stresses your plumbing — and the long-term way to protect it.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Hard Water Effects on Plumbing: How Scale Damages Pipes and How to Prevent It",
+  "author":{"@type":"Person","name":"Scott Murley"},
+  "publisher":{"@type":"Organization","name":"SpringWell SS Guide"},
+  "datePublished":"2026-06-21","dateModified":"2026-06-21"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Does hard water ruin pipes?","acceptedAnswer":{"@type":"Answer","text":"Hard water rarely ruins pipes quickly, but over years scale builds up on the inside, narrows the bore, reduces flow and pressure, and stresses the system. Galvanized steel pipes suffer most (scale plus corrosion); copper and PEX hold up better but still accumulate scale. It's a slow, cumulative problem, which is why prevention beats waiting for damage."}},
+    {"@type":"Question","name":"Can hard water clog pipes?","acceptedAnswer":{"@type":"Answer","text":"Yes, over time. Scale layers build on the inner walls of pipes and especially in narrow points like valves, aerators, and showerheads, gradually restricting flow. Full blockages are rare in main lines but common in fixtures and older or already-narrowed pipes. The hot-water side clogs faster because heat accelerates scale."}},
+    {"@type":"Question","name":"How long does it take hard water to damage plumbing?","acceptedAnswer":{"@type":"Answer","text":"It's gradual — usually years, not months. The rate depends on how hard your water is, how much you use, your pipe material, and temperature. Very hard water (10.5+ GPG) and hot-water lines scale fastest. You'll typically notice fixture symptoms (clogged aerators, weak showerheads) long before main pipes are significantly affected."}},
+    {"@type":"Question","name":"Can a water softener remove existing scale from pipes?","acceptedAnswer":{"@type":"Answer","text":"Not directly. A softener prevents new scale by removing the minerals before water enters your plumbing, but it doesn't dissolve buildup that's already inside the pipes. Some existing scale may slowly release once the water is soft, but heavy buildup generally stays; severe cases need professional cleaning or repiping. The softener's job is stopping it from getting worse."}},
+    {"@type":"Question","name":"Is hard water worse for water heaters?","acceptedAnswer":{"@type":"Answer","text":"Yes — water heaters are among the biggest victims because they constantly heat water, and heat drives scale formation fastest. Scale coats the element or tank bottom, insulating it so the heater uses more energy, heats slower, and often makes popping noises. Softening the water protects a replacement or freshly serviced heater."}},
+    {"@type":"Question","name":"Is PEX affected by hard water?","acceptedAnswer":{"@type":"Answer","text":"PEX resists hard water better than metal pipes — its smooth, flexible interior gives scale less to grab onto, so buildup is slower. But PEX isn't immune: scale can still form, and brass or metal fittings and valves in a PEX system scale like any other. So PEX reduces the problem but doesn't eliminate the need to manage hardness."}},
+    {"@type":"Question","name":"Does hard water reduce water pressure?","acceptedAnswer":{"@type":"Answer","text":"Yes, over time. As scale narrows the inside diameter of pipes and clogs aerators and showerheads, the effective opening for water shrinks, so flow and pressure drop. It's gradual, so many people don't notice until a shower feels weak. Cleaning fixtures restores some flow; preventing scale keeps pressure up long-term."}},
+    {"@type":"Question","name":"What is the best way to stop hard water damage?","acceptedAnswer":{"@type":"Answer","text":"Treat the water before it enters the plumbing. A properly sized salt-based water softener removes the calcium and magnesium through ion exchange, so no new scale forms anywhere downstream — pipes, fixtures, water heater, or appliances. Cleaning and descaling only address what's already deposited; softening addresses the cause."}}
+  ]
+}
+</script>
+<style>
+/* article-scoped styles for the two interactive tools (single-file upload) */
+#risk .field, #cost .field{display:flex;flex-direction:column;gap:.45rem;font-family:var(--ui);font-weight:600;font-size:.9rem;color:var(--brand-ink)}
+#risk .field .iviz-val, #cost .field .iviz-val{font-weight:800;color:var(--cta-dark)}
+#risk .seg, #cost .seg{display:flex;flex-wrap:wrap;gap:.4rem}
+#risk .seg button, #cost .seg button{font-family:var(--ui);font-weight:600;font-size:.82rem;border:1.5px solid var(--line);background:#fff;color:var(--brand-ink);border-radius:999px;padding:.38rem .8rem;cursor:pointer;transition:background .12s,border-color .12s,color .12s}
+#risk .seg button[aria-pressed="true"], #cost .seg button[aria-pressed="true"]{background:var(--cta);border-color:var(--cta);color:#03312d}
+.iviz-grid{display:grid;gap:1.05rem;margin-bottom:1.1rem}
+@media(min-width:560px){.iviz-grid.two{grid-template-columns:1fr 1fr}}
+.risk-meter{height:15px;border-radius:999px;background:var(--mist);overflow:hidden;border:1px solid var(--line);margin:.9rem 0 .3rem}
+.risk-meter > span{display:block;height:100%;width:0;border-radius:999px;transition:width .35s ease,background .35s ease}
+.cost-break{display:flex;flex-direction:column;gap:.5rem;font-family:var(--ui);margin:.4rem 0 .3rem}
+.cost-break .row{display:grid;grid-template-columns:130px 1fr auto;gap:.6rem;align-items:center}
+.cost-break .lbl{font-size:.78rem;font-weight:700;color:var(--brand-ink)}
+.cost-break .track{height:16px;background:var(--mist);border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.cost-break .track > span{display:block;height:100%;border-radius:999px;transition:width .35s ease;background:var(--cta-dark)}
+.cost-break .amt{font-size:.8rem;font-weight:800;color:var(--brand-ink);white-space:nowrap}
+.iviz .reco{font-family:var(--display);font-weight:800}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="/"><img class="mark" src="/assets/logo.svg" alt=""> SpringWell <b>SS</b> Guide</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="var l=document.getElementById('nl');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+    <nav class="nav-links" id="nl" aria-label="Primary">
+      <div class="nav-dd-wrap">
+        <a href="/#verdict" class="nav-dd-head">Reviews</a>
+        <div class="nav-dd">
+          <a href="/#verdict">SpringWell SS Softener Review</a>
+          <a href="/springwell-ss4-review">SpringWell SS4 Review</a>
+          <a href="/springwell-cf1-review">CF1 Whole-House Filter Review</a>
+          <a href="/springwell-filter-and-softener-combo-review">Filter + Softener Combo Review</a>
+          <a href="/springwell-vs-fleck-5600sxt">SpringWell vs Fleck</a>
+          <a href="/springwell-vs-culligan">SpringWell vs Culligan</a>
+          <a href="/is-springwell-water-softener-worth-it">Is SpringWell Worth It?</a>
+        </div>
+      </div>
+      <div class="nav-dd-wrap">
+        <a href="/hard-water-problems" class="nav-dd-head">Hard Water</a>
+        <div class="nav-dd">
+          <a href="/hard-water-problems">Hard Water Problems</a>
+          <a href="/what-is-considered-hard-water">What Is Hard Water?</a>
+          <a href="/hard-water-by-city">Is My City's Water Hard?</a>
+          <a href="/how-to-remove-hard-water-stains">Remove Hard Water Stains</a>
+          <a href="/limescale-buildup">Limescale Buildup</a>
+          <a href="/is-hard-water-bad-for-you">Is Hard Water Bad for You?</a>
+        </div>
+      </div>
+      <div class="nav-dd-wrap">
+        <a href="/water-softener-buyers-guide" class="nav-dd-head">Buying Guides</a>
+        <div class="nav-dd">
+          <a href="/water-softener-buyers-guide">Water Softener Buyer's Guide</a>
+          <a href="/what-size-water-softener-do-i-need">What Size Do I Need?</a>
+          <a href="/how-do-water-softeners-work">How Water Softeners Work</a>
+          <a href="/best-salt-based-water-softener">Best Salt-Based Softeners</a>
+          <a href="/water-softener-grain-capacity">Grain Capacity Explained</a>
+          <a href="/springwell-water-softener-cost">Cost Guide</a>
+          <a href="/are-water-softeners-worth-it">Are They Worth It?</a>
+        </div>
+      </div>
+      <div class="nav-dd-wrap">
+        <a href="/water-filter-vs-water-softener" class="nav-dd-head">Filtration</a>
+        <div class="nav-dd">
+          <a href="/water-filter-vs-water-softener">Filter vs Softener</a>
+          <a href="/how-to-treat-hard-city-water">Treat Hard City Water</a>
+          <a href="/well-water-treatment">Well Water Treatment</a>
+          <a href="/iron-filter-before-water-softener">Iron Filter Before Softener</a>
+          <a href="/chlorine-vs-chloramine">Chlorine vs Chloramine</a>
+          <a href="/best-whole-house-filter-and-softener-combo">Best Combo Systems</a>
+        </div>
+      </div>
+      <div class="nav-dd-wrap">
+        <a href="/water-softener-maintenance" class="nav-dd-head">Maintenance</a>
+        <div class="nav-dd">
+          <a href="/water-softener-maintenance">Maintenance Guide</a>
+          <a href="/water-softener-troubleshooting">Troubleshooting</a>
+          <a href="/water-softener-regeneration">Regeneration Explained</a>
+          <a href="/how-long-does-water-softener-resin-last">Resin Lifespan</a>
+        </div>
+      </div>
+      <div class="nav-dd-wrap">
+        <a href="/how-to-test-water-quality-at-home" class="nav-dd-head">Testing</a>
+        <div class="nav-dd">
+          <a href="/how-to-test-water-quality-at-home">How to Test Your Water</a>
+          <a href="/best-water-test-kits">Best Water Test Kits</a>
+        </div>
+      </div>
+      <a href="/about">About</a>
+      <a class="nav-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check Price</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="article">
+
+  <p class="crumbs"><a href="/">SpringWell SS Guide</a> &rsaquo; <a href="/hard-water-problems">Hard Water</a> &rsaquo; Plumbing</p>
+  <p class="eyebrow">Hard Water · Plumbing &amp; Pipes</p>
+  <h1>Hard Water Effects on Plumbing: How Scale Damages Pipes &amp; How to Prevent It</h1>
+  <p class="dek">The weak showerhead, the faucet that won't stop crusting over, the pressure that's dropped over the years — that's hard water working <em>inside</em> your pipes, where you can't see it. Here's what it's doing, and how to protect the whole system.</p>
+
+  <div class="byline">
+    <img src="/assets/scott-murley.png" alt="Scott Murley">
+    <div class="who">
+      <a href="/about">Scott Murley</a>
+      <span>Founder · water treatment writer &amp; former install tech</span>
+    </div>
+    <div class="upd">Updated<br>June 21, 2026</div>
+  </div>
+
+  <div class="toc" aria-label="Table of contents">
+    <b>In this guide</b>
+    <ol>
+      <li><a href="#quick">Does hard water damage plumbing?</a></li>
+      <li><a href="#what">What hard water is</a></li>
+      <li><a href="#pipes">Effects on pipes (by material)</a></li>
+      <li><a href="#notice">Damage you notice first</a></li>
+      <li><a href="#hidden">Hidden plumbing costs</a></li>
+      <li><a href="#risk">Plumbing damage risk calculator</a></li>
+      <li><a href="#heater">Hard water &amp; water heaters</a></li>
+      <li><a href="#fixtures">Effects on fixtures &amp; appliances</a></li>
+      <li><a href="#health">Is hard water bad for health?</a></li>
+      <li><a href="#checklist">Is it damaging your plumbing?</a></li>
+      <li><a href="#cost">Damage cost estimator</a></li>
+      <li><a href="#protect">How to protect your plumbing</a></li>
+      <li><a href="#softener">The long-term fix</a></li>
+      <li><a href="#who">Who should consider one</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </div>
+
+  <!-- INTRO -->
+  <p>Here's the thing about hard water and your plumbing: by the time you notice it, it's usually been working for years. The white crust you wipe off the faucet is just the part you can see. Inside the walls, inside the pipes, the same minerals have been quietly building up — hard water buildup in pipes that narrows the channels your water flows through, coats the parts that move and heat water, and slowly drags down the efficiency of your whole system. None of it is dramatic on any given day. That's exactly what makes it expensive: it's gradual and hidden, until a showerhead barely trickles or a water heater fails years early.</p>
+  <p>I've opened up enough plumbing in hard-water homes to know the pattern well. So let me walk you through what hard water actually does to your pipes, fixtures, and water heater — including how different pipe materials hold up — and the honest difference between cleaning the symptoms and protecting the house.</p>
+
+  <!-- QUICK ANSWER -->
+  <h2 id="quick">Quick answer: does hard water damage plumbing?</h2>
+  <div class="verdict">
+    <div class="vtop">
+      <span class="score">Yes — gradually</span>
+      <h3>Scale builds inside pipes, fixtures, valves, and appliances over time</h3>
+    </div>
+    <p>Hard water usually <strong>doesn't destroy pipes overnight</strong>, but mineral scale builds up inside your plumbing, fixtures, valves, and water-using appliances over time. That buildup <strong>narrows pipes, reduces flow and pressure, clogs fixtures, and stresses the system</strong> — and the harder your water and the older or more scale-prone your pipes, the faster it adds up. The good news: it's preventable. Remove the hardness before water enters the plumbing and no new scale forms anywhere downstream.</p>
+  </div>
+
+  <!-- WHAT -->
+  <h2 id="what">What is hard water (in plain English)?</h2>
+  <p>Hard water is water carrying a lot of dissolved <strong>calcium and magnesium</strong>. These minerals come from water moving through limestone and mineral-rich ground, and most U.S. homes have at least moderately hard water (per the USGS). Hardness is measured in <strong>grains per gallon (GPG)</strong> or <strong>ppm/mg/L</strong>, where <strong>1 GPG ≈ 17.1 ppm</strong>. When this water sits, flows, or especially gets <strong>heated</strong>, the minerals come out of solution and harden into <strong>scale</strong> — the chalky deposit that's the root of every plumbing problem in this article.</p>
+  <div class="tbl-wrap">
+  <table>
+    <caption>Water hardness scale</caption>
+    <thead><tr><th>Level</th><th>Grains per gallon</th><th>ppm / mg/L</th><th>Plumbing scale risk</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Soft</strong></td><td>0–1 GPG</td><td>0–17 ppm</td><td>Minimal</td></tr>
+      <tr><td><strong>Slightly hard</strong></td><td>1–3.5 GPG</td><td>17–60 ppm</td><td>Low</td></tr>
+      <tr><td><strong>Moderately hard</strong></td><td>3.5–7 GPG</td><td>60–120 ppm</td><td>Moderate</td></tr>
+      <tr><td><strong>Hard</strong></td><td>7–10.5 GPG</td><td>120–180 ppm</td><td>High — visible scale</td></tr>
+      <tr><td><strong>Very hard</strong></td><td>10.5+ GPG</td><td>180+ ppm</td><td>Severe — fast buildup</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Above <strong>7 GPG</strong> is where plumbing scale becomes a real, visible issue. (For the full breakdown of levels and how to read your report, see <a href="/what-is-considered-hard-water">what is considered hard water?</a>)</p>
+
+  <!-- PIPES BY MATERIAL -->
+  <h2 id="pipes">Hard water effects on pipes — and how your pipe material matters</h2>
+  <p>This is the part most articles skip, and it's the most useful answer to "<strong>does hard water damage pipes?</strong>": <strong>yes, and it affects different pipe materials differently.</strong> Inside any pipe, scale layers build on the walls and gradually <strong>narrow the bore</strong> — think of cholesterol narrowing an artery. Less open diameter means <strong>reduced water flow</strong>, <strong>pressure issues</strong> at your fixtures, and <strong>more stress</strong> on the whole system as it works harder to push the same water. But how fast and how badly that happens depends a lot on what your pipes are made of:</p>
+  <div class="tbl-wrap">
+  <table>
+    <caption>How hard water affects different pipe materials</caption>
+    <thead><tr><th>Pipe material</th><th>How it handles hard water</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Galvanized steel</strong> (older homes)</td><td><strong>Worst</strong> — scale plus internal corrosion/rust</td><td>Narrows fastest; can clog and fail; common in pre-1960s homes</td></tr>
+      <tr><td><strong>Copper</strong></td><td><strong>Moderate</strong> — durable but still scales internally</td><td>Long-lasting; scale still deposits, especially on hot lines</td></tr>
+      <tr><td><strong>PEX</strong> (modern flexible)</td><td><strong>Best</strong> — smooth interior, scale adheres less</td><td>Most hard-water-resistant pipe, but fittings/valves still scale</td></tr>
+      <tr><td><strong>Older / mixed plumbing</strong></td><td>Existing roughness gives scale more to grab</td><td>Decades-old pipes can already be significantly narrowed</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>A couple of honest clarifications, because this gets oversold elsewhere. <strong>PEX is more resistant, not immune</strong> — its smooth bore slows buildup, but the brass and metal fittings, valves, and the water heater in a PEX system scale just like anything else. And <strong>galvanized pipe</strong> is the real concern: in older homes, hard water plus the pipe's own corrosion can narrow it dramatically and even cause failures. One more key point: <strong>your hot-water side scales faster than your cold side</strong>, because heat accelerates scale formation — so hot lines and the water heater are always the first to suffer regardless of material. (The deeper scale science is in my <a href="/limescale-buildup">limescale &amp; scale buildup guide</a>.)</p>
+
+  <!-- NOTICE FIRST -->
+  <h2 id="notice">Hard water plumbing damage homeowners notice first</h2>
+  <p>You'll see the symptoms at your fixtures long before anything dramatic happens in the walls. The early-warning signs:</p>
+  <div class="tbl-wrap">
+  <table>
+    <caption>Visible symptom → likely cause → fix</caption>
+    <thead><tr><th>What you notice</th><th>Likely cause</th><th>Fix</th></tr></thead>
+    <tbody>
+      <tr><td>White crust on faucets</td><td>Mineral deposits at the outlet</td><td>Vinegar soak; soften to prevent</td></tr>
+      <tr><td>Showerhead clogging / weak spray</td><td>Scale blocking the nozzles</td><td>Soak in vinegar; soften to prevent</td></tr>
+      <tr><td>Slow water flow / low pressure</td><td>Scale narrowing pipes &amp; aerators</td><td>Clean aerators; soften to prevent</td></tr>
+      <tr><td>Stiff laundry</td><td>Minerals in fabric</td><td>Soften the water</td></tr>
+      <tr><td>Soap won't lather</td><td>Minerals binding soap</td><td>Soften the water</td></tr>
+      <tr><td>Spots on dishes &amp; glass</td><td>Dried mineral residue</td><td>Rinse aid; soften to prevent</td></tr>
+      <tr><td>Water heater noise (popping)</td><td>Scale on element/tank bottom</td><td>Flush; soften to protect</td></tr>
+      <tr><td>Frequent fixture cleaning</td><td>Recurring scale</td><td>Soften to reduce buildup</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Notice the pattern in that last column: every short-term fix is a repeat chore, and every long-term fix is the same one thing — soften the water. That's not a coincidence; it's the tell that these are all symptoms of one root cause.</p>
+
+  <!-- HIDDEN COSTS -->
+  <h2 id="hidden">The hidden plumbing costs of hard water</h2>
+  <p>The reason I push the protect-the-house framing is that hard water's real cost is invisible and spread out. It shows up as:</p>
+  <ul>
+    <li><strong>Water heater efficiency loss</strong> — scale insulates the element, so it burns more energy to heat the same water.</li>
+    <li><strong>Appliance wear</strong> — dishwashers, washers, and anything that heats or moves water works harder and wears sooner.</li>
+    <li><strong>Fixture replacement</strong> — clogged aerators, crusted showerheads, and fouled valves that need replacing.</li>
+    <li><strong>More cleaning products</strong> — descalers, extra detergent, soap, and rinse aid, bought again and again.</li>
+    <li><strong>Plumber visits</strong> — for pressure problems, clogged fixtures, and in severe cases, scaled or failed pipe.</li>
+    <li><strong>Shortened appliance lifespan</strong> — the big one: water-using appliances that die years early.</li>
+  </ul>
+  <p>None of these is a single shocking bill. They're a slow stack — which is exactly why it's easy to ignore until the stack is tall. (For the appliance side specifically, see <a href="/does-hard-water-damage-appliances">does hard water damage appliances?</a>)</p>
+
+  <!-- INTERACTIVE 1: plumbing damage risk calculator -->
+  <div class="iviz" id="risk">
+    <div class="iviz-head">
+      <span class="iviz-tag">Interactive &middot; Plumbing risk calculator</span>
+      <h3>Hard water plumbing damage risk calculator</h3>
+      <p class="iviz-sub">Estimate how fast scale is building inside your specific plumbing — pipe material and age included. Estimates only.</p>
+    </div>
+    <div class="iviz-grid two">
+      <label class="field">Water hardness <span class="iviz-val"><output id="rk_gpg">12</output> GPG</span>
+        <input type="range" id="rk_r_gpg" min="0" max="30" step="1" value="12"></label>
+      <label class="field">People in home <span class="iviz-val"><output id="rk_ppl">4</output></span>
+        <input type="range" id="rk_r_ppl" min="1" max="8" step="1" value="4"></label>
+      <div class="field">Pipe material
+        <div class="seg" data-q="pipe"><button type="button" data-v="pex">PEX</button><button type="button" data-v="copper" aria-pressed="true">Copper</button><button type="button" data-v="galv">Galvanized</button><button type="button" data-v="unk">Not sure</button></div></div>
+      <div class="field">Water heater type
+        <div class="seg" data-q="wh"><button type="button" data-v="tank" aria-pressed="true">Tank</button><button type="button" data-v="tankless">Tankless</button><button type="button" data-v="none">None/other</button></div></div>
+      <div class="field">Plumbing age
+        <div class="seg" data-q="age"><button type="button" data-v="new">Under 10 yrs</button><button type="button" data-v="mid" aria-pressed="true">10–30 yrs</button><button type="button" data-v="old">30+ yrs</button></div></div>
+      <div class="field">Visible scale
+        <div class="seg" data-q="scale"><button type="button" data-v="none">None</button><button type="button" data-v="mild" aria-pressed="true">Mild</button><button type="button" data-v="mod">Moderate</button><button type="button" data-v="heavy">Heavy</button></div></div>
+    </div>
+    <div class="risk-meter"><span id="rkBar"></span></div>
+    <div class="iviz-result" id="rkResult"></div>
+    <p class="iviz-note">Galvanized and older plumbing raise the risk; PEX lowers it. A water test confirms your hardness number.</p>
+  </div>
+
+  <!-- WATER HEATER -->
+  <h2 id="heater">Hard water and water heaters: the biggest victim</h2>
+  <p>If pipes are where hard water hides, the water heater is where it does the most expensive damage — so it deserves its own section. A water heater <strong>constantly heats water</strong>, and heat is exactly what drives calcium carbonate scale to form fastest. The result: <strong>sediment and scale settle at the bottom of a tank heater and coat the heating element</strong>. That scale layer acts as <strong>insulation</strong>, so the heater has to work harder and burn more energy to push heat through it — wasting energy and slowing recovery. You'll often hear <strong>popping, rumbling, or crackling</strong> as water boils under the scale, and over time the unit's <strong>lifespan shortens</strong>.</p>
+  <p>The key insight for plumbing protection: <strong>softening the water before it reaches the heater</strong> prevents new scale from forming on the element and tank in the first place. A softener won't fix a heater that's already scaled, but it protects a new or freshly serviced one — which is why I always suggest pairing a softener with a water-heater replacement. (Full detail in <a href="/does-hard-water-damage-appliances">does hard water damage appliances?</a>)</p>
+
+  <!-- FIXTURES & APPLIANCES -->
+  <h2 id="fixtures">Hard water effects on fixtures and appliances</h2>
+  <p>Beyond the pipes themselves, hard water hits everything connected to them:</p>
+  <ul>
+    <li><strong>Faucets</strong> — crust at the outlet, clogged aerators, reduced flow, drips.</li>
+    <li><strong>Showerheads</strong> — scale-blocked nozzles, weak and uneven spray.</li>
+    <li><strong>Dishwashers</strong> — clogged spray jets, mineral film on dishes, element wear.</li>
+    <li><strong>Washing machines</strong> — scale in valves and lines, stiffer laundry, added wear.</li>
+    <li><strong>Coffee makers</strong> — scale fast, slow heating, off taste.</li>
+    <li><strong>Ice makers</strong> — mineral clogging, cloudy ice, slow production.</li>
+    <li><strong>Toilets</strong> — mineral rings and fill-valve fouling.</li>
+    <li><strong>Humidifiers</strong> — scale and white mineral dust.</li>
+  </ul>
+  <p>Every one of these shares the pipes' root cause, which means a single source fix — softening — protects all of them at once, instead of you chasing each fixture separately.</p>
+
+  <!-- HEALTH -->
+  <h2 id="health">Is hard water bad for health?</h2>
+  <p>Quick, calm answer: hard water is <strong>generally more of a home and plumbing problem than a direct health danger</strong>. The calcium and magnesium that make water hard are dietary minerals, not contaminants, and the EPA doesn't regulate hardness as a health risk. Some people notice <strong>dry-feeling skin or dull hair</strong> after showering (covered carefully, and not as medical advice, in my <a href="/hard-water-dry-skin">hard water &amp; dry skin guide</a>), but the bigger, more concrete concern for most homes is the <strong>scale damage and cleaning burden</strong> this article is about. So you don't need to fear your water — you may just want to protect your plumbing from it.</p>
+
+  <!-- CHECKLIST -->
+  <h2 id="checklist">How to know if hard water is damaging your plumbing</h2>
+  <p>Run this checklist to connect hard water and plumbing problems in your own home. The more you tick, the more likely scale is actively building in your system — and the stronger the case for testing your hardness:</p>
+  <ul>
+    <li>White crust on faucets and showerheads</li>
+    <li>Water pressure that's dropped over time</li>
+    <li>Showerheads or aerators you clean or replace often</li>
+    <li>Soap scum, stiff laundry, spotty dishes</li>
+    <li>Water heater popping or running less efficiently</li>
+    <li>Chalky residue around drains and sinks</li>
+    <li>Older home with original (possibly galvanized) plumbing</li>
+  </ul>
+  <p>Three or more of these, especially alongside an older home or a tank water heater, is the point where I'd stop guessing and confirm the hardness with a test.</p>
+
+  <!-- HOW TO TEST -->
+  <h2 id="test">How to test for hard water</h2>
+  <p>Confirming your number is cheap and quick, and it's the right first step before any purchase:</p>
+  <ul>
+    <li><strong>Test strips</strong> — dip and read your hardness in seconds; great for a fast ballpark.</li>
+    <li><strong>Lab testing</strong> — the complete profile (hardness plus iron, manganese, pH, TDS); essential on a well.</li>
+    <li><strong>City water report (CCR)</strong> — lists an average hardness; a useful free starting point.</li>
+    <li><strong>Professional water test</strong> — a treatment pro can test on-site and interpret it for your home.</li>
+  </ul>
+  <p>Knowing the hardness level matters because it tells you whether you need treatment at all, what size, and whether something else (like iron) needs handling first. (More in <a href="/what-is-considered-hard-water">what is considered hard water?</a>)</p>
+  <div class="cta-block">
+    <h3>Turn symptoms into a real number</h3>
+    <p>A simple hardness test confirms whether scale is a real risk for your plumbing before you decide on any system.</p>
+    <a class="btn btn-cta btn-lg" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">See a water hardness test kit →</a>
+  </div>
+
+  <!-- INTERACTIVE 2: cost estimator -->
+  <div class="iviz" id="cost">
+    <div class="iviz-head">
+      <span class="iviz-tag">Interactive &middot; Damage cost estimator</span>
+      <h3>Hard water damage cost estimator</h3>
+      <p class="iviz-sub">See roughly where hard water may be costing you each year — broken down by category. Estimates, not a guarantee.</p>
+    </div>
+    <div class="iviz-grid two">
+      <label class="field">Water heater age <span class="iviz-val"><output id="c_wh">8</output> yrs</span>
+        <input type="range" id="c_r_wh" min="0" max="20" step="1" value="8"></label>
+      <label class="field">Major water-using appliances <span class="iviz-val"><output id="c_app">4</output></span>
+        <input type="range" id="c_r_app" min="1" max="10" step="1" value="4"></label>
+      <label class="field">Cleaning products $ / month <span class="iviz-val">$<output id="c_clean">15</output></span>
+        <input type="range" id="c_r_clean" min="0" max="60" step="2" value="15"></label>
+      <div class="field">Fixture clogs / replacements
+        <div class="seg" data-q="clog"><button type="button" data-v="rare">Rarely</button><button type="button" data-v="some" aria-pressed="true">Sometimes</button><button type="button" data-v="often">Often</button></div></div>
+      <div class="field" style="grid-column:1/-1">Water hardness
+        <div class="seg" data-q="hard"><button type="button" data-v="soft">Soft</button><button type="button" data-v="mod">Moderately hard</button><button type="button" data-v="hard" aria-pressed="true">Hard</button><button type="button" data-v="vhard">Very hard</button></div></div>
+    </div>
+    <div class="cost-break" id="costBreak"></div>
+    <div class="iviz-result" id="costResult"></div>
+    <p class="iviz-note">A rough annual estimate of hard-water-related costs (energy, wear, products, fixtures). Your actual numbers depend on usage and local rates.</p>
+  </div>
+
+  <!-- PROTECT -->
+  <h2 id="protect">How to protect plumbing from hard water</h2>
+  <p>There are two tiers here, and it's worth being clear-eyed about what each does:</p>
+  <div class="tbl-wrap">
+  <table>
+    <caption>Short-term fixes vs the long-term solution</caption>
+    <thead><tr><th>Approach</th><th>What it does</th><th>Limitation</th></tr></thead>
+    <tbody>
+      <tr><td>Vinegar / descaler on fixtures</td><td>Dissolves visible scale on faucets &amp; showerheads</td><td>Only removes existing scale; doesn't stop more forming</td></tr>
+      <tr><td>Clean aerators &amp; showerheads</td><td>Restores flow at the fixture</td><td>Recurs on hard water; repeat chore</td></tr>
+      <tr><td>Flush the water heater</td><td>Clears loose sediment/scale</td><td>Maintenance only; scale keeps arriving</td></tr>
+      <tr><td><strong>Whole-house water softener</strong></td><td><strong>Removes minerals before they enter the plumbing</strong></td><td><strong>The long-term prevention method</strong></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>The crucial point: <strong>vinegar and descalers only treat visible scale, not the source.</strong> They clean what you can reach and see, but the water flowing behind that fixture is still hard, so the scale rebuilds — and the scale you <em>can't</em> reach, deep in the pipes and the water heater, keeps growing. A whole-house softener is the only approach that stops new scale forming everywhere at once, because it changes the water itself before it enters the system.</p>
+
+  <!-- SOFTENER -->
+  <h2 id="softener">The long-term fix: a salt-based water softener</h2>
+  <p>A salt-based softener works by <strong>ion exchange</strong> — it removes the calcium and magnesium from your water as it passes through the system, before that water ever reaches your pipes. Here's what that means for your home, in plain features-to-benefits terms:</p>
+  <ul>
+    <li><strong>Removes hardness minerals before they enter the plumbing → no new scale</strong> forms in pipes, fixtures, the water heater, or appliances.</li>
+    <li><strong>Reduces future scale buildup → better water flow and pressure</strong> that holds up over the years.</li>
+    <li><strong>Protects water heaters and appliances → longer lifespan</strong> and fewer early replacements.</li>
+    <li><strong>Improves soap lather → less soap, shampoo, and detergent</strong> needed.</li>
+    <li><strong>Reduces cleaning effort → fixtures stay cleaner longer</strong>, with far less scrubbing and descaling.</li>
+  </ul>
+  <p>For a home with real, tested hard water, this is the type of system I'd look at to protect the whole house at once. The <strong>SpringWell Salt-Based Water Softener</strong> is a strong option here — true ion-exchange softening, sized for different home sizes, built to run efficiently with metered regeneration. If your goal is to protect your plumbing, fixtures, water heater, and appliances from years of slow scale damage, this is the category of fix that addresses the cause rather than the symptoms.</p>
+  <div class="cta-block">
+    <h3>Protect the whole house at the source</h3>
+    <p>If your water tests hard, a salt-based softener stops scale before it reaches your pipes — backed by a lifetime warranty and 6-month money-back trial.</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check the SpringWell Salt-Based Softener →</a>
+  </div>
+  <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.) Weighing salt vs salt-free? See <a href="/#saltfree">the comparison</a>, or the full <a href="/">softener review</a>.</p>
+
+  <!-- WHO -->
+  <h2 id="who">Who should consider a salt-based softener (and who may not need one)</h2>
+  <div class="pc">
+    <div class="col pros">
+      <h4>Strong fit</h4>
+      <ul>
+        <li>Homes with moderate to very hard water (7+ GPG)</li>
+        <li>Homes with visible scale on fixtures</li>
+        <li>Families replacing appliances too often</li>
+        <li>Homes with tank water heaters</li>
+        <li>Older homes with original/galvanized plumbing</li>
+        <li>Homeowners who want true soft water, not just scale conditioning</li>
+      </ul>
+    </div>
+    <div class="col cons">
+      <h4>May not need one</h4>
+      <ul>
+        <li>Slightly hard water (under ~3.5 GPG)</li>
+        <li>Renters who can't install a whole-house system</li>
+        <li>Homes with no scale issues</li>
+        <li>Those who only need drinking-water filtration, not softening</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <h2 id="faq">Frequently asked questions</h2>
+  <div class="faq">
+    <details><summary>Does hard water ruin pipes?</summary><p>Rarely fast, but over years scale narrows the bore, cuts flow and pressure, and stresses the system. Galvanized steel suffers most (scale + corrosion); copper and PEX hold up better but still scale. It's cumulative, so prevention beats waiting.</p></details>
+    <details><summary>Can hard water clog pipes?</summary><p>Yes, over time — scale builds on the walls and especially in narrow points like valves, aerators, and showerheads. Full main-line blockages are rare; fixture and older-pipe clogs are common. Hot lines clog faster.</p></details>
+    <details><summary>How long does it take hard water to damage plumbing?</summary><p>Years, not months — and it depends on hardness, usage, pipe material, and temperature. Very hard water and hot lines scale fastest. You'll notice fixture symptoms long before main pipes are badly affected.</p></details>
+    <details><summary>Can a water softener remove existing scale from pipes?</summary><p>Not directly — it prevents new scale rather than dissolving old buildup. Some existing scale may release slowly once water is soft, but heavy buildup stays; severe cases need professional cleaning or repiping.</p></details>
+    <details><summary>Is hard water worse for water heaters?</summary><p>Yes — constant heating drives scale fastest, insulating the element so it wastes energy, heats slower, and pops. Softening protects a replacement or serviced unit.</p></details>
+    <details><summary>Is PEX affected by hard water?</summary><p>Less than metal — its smooth interior slows buildup — but it's not immune, and the brass/metal fittings and valves in a PEX system still scale. PEX reduces the problem, doesn't eliminate it.</p></details>
+    <details><summary>Does hard water reduce water pressure?</summary><p>Yes, gradually — scale narrows pipes and clogs aerators and showerheads, shrinking the opening for water. Cleaning fixtures restores some flow; preventing scale keeps pressure up long-term.</p></details>
+    <details><summary>What is the best way to stop hard water damage?</summary><p>Treat the water before it enters the plumbing. A properly sized salt-based softener removes the minerals via ion exchange, so no new scale forms downstream. Cleaning only addresses what's already deposited.</p></details>
+  </div>
+
+  <!-- CONCLUSION -->
+  <h2 id="concl">The bottom line on hard water effects on plumbing</h2>
+  <p>Hard water's effect on your plumbing is the most expensive kind of problem: slow, hidden, and system-wide. It scales the inside of your pipes, narrows them, drops your pressure, clogs your fixtures, and quietly shortens the life of your water heater and appliances — and how fast depends on your hardness and your pipe material, with galvanized and older plumbing most at risk. You can clean the visible scale, and you should, but cleaning is a holding action against water that's still hard. The way to actually protect the house is prevention: test your hardness, and if it's high, a properly sized salt-based softener removes the minerals at the source so new scale simply stops forming — anywhere in the system. Protect the whole house once, instead of chasing scale fixture by fixture forever.</p>
+
+  <p class="muted" style="font-family:var(--ui);font-size:.85rem">By <a href="/about">Scott Murley</a>. Plumbing and cost guidance is general; consult a licensed plumber for your specific system, and follow appliance manufacturers' instructions. Hardness facts are general information attributed to sources such as the USGS, WQA, and EPA — not medical advice.</p>
+
+  <!-- AUTHOR BOX -->
+  <div class="author-box">
+    <img src="/assets/scott-murley.png" alt="Scott Murley, founder and lead reviewer">
+    <div>
+      <span class="ab-eyebrow">About the author</span>
+      <h3>Scott Murley</h3>
+      <p>Scott is the founder and lead reviewer at SpringWell SS Guide. He spent years working hands-on with residential water systems — sizing softeners and cutting in bypass valves — before writing about them full-time. Every recommendation here is built problem-first: match the symptom, verify the specs at the source, and account for the real cost of ownership. <a href="/about">More about Scott &amp; our review process →</a></p>
+    </div>
+  </div>
+
+</article>
+
+  <!-- Related cluster links -->
+  <section class="section mist">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Keep researching</p>
+        <h2>Related guides</h2>
+      </div>
+      <div class="grid grid-3">
+        <a class="card" href="/limescale-buildup"><span class="tag">Scale</span><h3>Limescale &amp; Scale Buildup</h3><p>The deeper science of how scale forms in pipes and appliances.</p></a>
+        <a class="card" href="/does-hard-water-damage-appliances"><span class="tag">Appliances</span><h3>Does Hard Water Damage Appliances?</h3><p>What scale costs your water heater, dishwasher, and more.</p></a>
+        <a class="card" href="/what-is-considered-hard-water"><span class="tag">Reference</span><h3>What Is Considered Hard Water?</h3><p>The full GPG &amp; ppm scale, and how to test your water.</p></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="fbrandwrap">
+      <div class="fbrand"><img class="mark" src="/assets/logo.svg" alt=""> SpringWell SS Guide</div>
+      <p class="blurb">An independent, homeowner-first guide to SpringWell salt-based softeners, whole-house filtration, and hard-water treatment. We diagnose the problem first, then recommend a system only if it fits.</p>
+      <p class="fcontact"><strong style="color:#fff">SpringWell SS Guide</strong><br>1880 N County Road 9, Bellefontaine, OH 43311<br><a href="mailto:Scott@springwellssguide.com">Scott@springwellssguide.com</a></p>
+    </div>
+    <div>
+      <h4>Guides</h4>
+      <ul>
+        <li><a href="/#verdict">SpringWell Softener Review</a></li>
+        <li><a href="/hard-water-problems">Hard Water Problems</a></li>
+        <li><a href="/#filtration">Filtration &amp; Combos</a></li>
+        <li><a href="/#guides">Buying &amp; Sizing</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <ul>
+        <li><a href="/about">About / Our Process</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/affiliate-disclosure">Affiliate Disclosure</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Use</a></li>
+        <li><a href="/sitemap">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="fb-in">
+      <span>© 2026 SpringWell SS Guide. All rights reserved.</span>
+      <span>SpringWell&reg; is a trademark of its respective owner. This site is not operated by SpringWell.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  function bindSeg(g,cb){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;g.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false');});b.setAttribute('aria-pressed','true');cb();});}
+  function segv(scope,q){var b=scope.querySelector('.seg[data-q="'+q+'"] button[aria-pressed="true"]');return b?b.getAttribute('data-v'):null;}
+  function money(n){return '$'+Math.round(n).toLocaleString();}
+
+  /* ---- Interactive 1: plumbing damage risk calculator ---- */
+  var rkGpg=document.getElementById('rk_r_gpg');
+  if(rkGpg){
+    var rkPpl=document.getElementById('rk_r_ppl');
+    var risk=document.getElementById('risk');
+    risk.querySelectorAll('.seg[data-q]').forEach(function(g){bindSeg(g,renderRisk);});
+    function renderRisk(){
+      var g=+rkGpg.value, p=+rkPpl.value;
+      var pipe=segv(risk,'pipe'), wh=segv(risk,'wh'), age=segv(risk,'age'), scale=segv(risk,'scale');
+      document.getElementById('rk_gpg').textContent=g;
+      document.getElementById('rk_ppl').textContent=p;
+      // pipe material modifier: galvanized worst, copper mid, PEX best
+      var pipeBonus={pex:-8,copper:0,galv:16,unk:4}[pipe];
+      var ageBonus={new:-4,mid:4,old:12}[age];
+      var scaleBonus={none:0,mild:6,mod:12,heavy:18}[scale];
+      var whBonus = wh==='tankless'?6:wh==='tank'?3:0;
+      var score=Math.min(100, Math.max(3, Math.round( (g/26)*46 + (p-1)*2 + pipeBonus + ageBonus + scaleBonus + whBonus )));
+      var band,color,head,msg,cta='';
+      var testCta='<a class="btn btn-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">Confirm with a test kit →</a>';
+      var softCta='<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the softener →</a>';
+      var pipeNote = pipe==='galv' ? ' Galvanized pipe is especially vulnerable to scale plus corrosion.' : pipe==='pex' ? ' PEX resists buildup, but fittings and the water heater still scale.' : '';
+      if(score<34){
+        band='Low plumbing risk'; color='var(--cta)';
+        head='Low risk — monitor and test if curious';
+        msg='Scale accumulation in your plumbing looks slow.'+pipeNote+' A test confirms; a softener may not be necessary yet.';
+        cta=testCta;
+      } else if(score<67){
+        band='Moderate plumbing risk'; color='#e0a83a';
+        head='Moderate — worth testing, softener likely pays off';
+        msg='Scale is building at a meaningful rate inside your system.'+pipeNote+' Confirm hardness with a test; if it\u2019s 7+ GPG, a softener protects your pipes and fixtures.';
+        cta=testCta;
+      } else {
+        band='High plumbing risk'; color='var(--rust)';
+        head='High — a softener is the direct fix';
+        msg='Hard water'+(age==='old'?', older plumbing':'')+(pipe==='galv'?', and galvanized pipe':'')+' mean fast scale accumulation in your system. A salt-based softener prevents it at the source.';
+        cta=softCta;
+      }
+      var bar=document.getElementById('rkBar');
+      bar.style.width=score+'%'; bar.style.background=color;
+      document.getElementById('rkResult').innerHTML=
+        '<div class="iviz-cards" style="grid-template-columns:1fr"><div class="ivc hot"><span class="ivc-k">'+band+' &middot; '+score+'/100</span><span class="ivc-v reco" style="color:#fff">'+head+'</span><span class="ivc-u">'+msg+'</span>'+cta+'</div></div>';
+    }
+    [rkGpg,rkPpl].forEach(function(el){el.addEventListener('input',renderRisk);});
+    renderRisk();
+  }
+
+  /* ---- Interactive 2: damage cost estimator (itemized) ---- */
+  var cWh=document.getElementById('c_r_wh');
+  if(cWh){
+    var cApp=document.getElementById('c_r_app'), cClean=document.getElementById('c_r_clean');
+    var cost=document.getElementById('cost');
+    cost.querySelectorAll('.seg[data-q]').forEach(function(g){bindSeg(g,renderCost);});
+    function renderCost(){
+      var whAge=+cWh.value, app=+cApp.value, clean=+cClean.value;
+      var clog=segv(cost,'clog'), hard=segv(cost,'hard');
+      document.getElementById('c_wh').textContent=whAge;
+      document.getElementById('c_app').textContent=app;
+      document.getElementById('c_clean').textContent=clean;
+      // hardness multiplier drives everything
+      var hMult={soft:0.15,mod:0.6,hard:1,vhard:1.4}[hard];
+      var clogMult={rare:0.6,some:1,often:1.6}[clog];
+      // itemized annual estimates (rough)
+      var heater = Math.round((20 + whAge*6) * hMult /5)*5;       // efficiency loss grows with age
+      var appliance = Math.round(app*22 * hMult /5)*5;            // wear across appliances
+      var products = Math.round(clean*12 * (0.5+0.5*hMult) /5)*5; // extra products attributable to hardness
+      var fixtures = Math.round(60 * clogMult * hMult /5)*5;      // fixture replacement/clogs
+      var total = heater+appliance+products+fixtures;
+      var totalLow = Math.round(total*0.7/10)*10, totalHigh=Math.round(total*1.3/10)*10;
+      var maxV=Math.max(heater,appliance,products,fixtures,1);
+      document.getElementById('costBreak').innerHTML=
+        '<div class="row"><span class="lbl">Water heater</span><div class="track"><span style="width:'+(heater/maxV*100)+'%"></span></div><span class="amt">'+money(heater)+'/yr</span></div>'+
+        '<div class="row"><span class="lbl">Appliance wear</span><div class="track"><span style="width:'+(appliance/maxV*100)+'%"></span></div><span class="amt">'+money(appliance)+'/yr</span></div>'+
+        '<div class="row"><span class="lbl">Cleaning products</span><div class="track"><span style="width:'+(products/maxV*100)+'%"></span></div><span class="amt">'+money(products)+'/yr</span></div>'+
+        '<div class="row"><span class="lbl">Fixtures / clogs</span><div class="track"><span style="width:'+(fixtures/maxV*100)+'%"></span></div><span class="amt">'+money(fixtures)+'/yr</span></div>';
+      var head, msg, cta='';
+      var softCta='<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the softener →</a>';
+      var testCta='<a class="btn btn-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">Test your hardness first →</a>';
+      if(hard==='soft'){
+        head='Low estimated cost — your water is soft';
+        msg='With soft water, hard-water costs are minimal. Recurring fixture or appliance issues are likely from something other than hardness.';
+        cta=testCta;
+      } else if(total<150){
+        head='~'+money(totalLow)+'\u2013'+money(totalHigh)+'/yr in hard-water costs';
+        msg='Modest but real. Mostly cleaning and minor wear at this level \u2014 worth testing your hardness and weighing a softener if it\u2019s climbing.';
+        cta=testCta;
+      } else {
+        head='~'+money(totalLow)+'\u2013'+money(totalHigh)+'/yr in hard-water costs';
+        msg='That\u2019s a meaningful yearly drain, and the biggest line items are exactly what a softener prevents. For confirmed hard water, whole-house softening usually pays back here.';
+        cta=softCta;
+      }
+      document.getElementById('costResult').innerHTML=
+        '<div class="iviz-cards" style="grid-template-columns:1fr"><div class="ivc hot"><span class="ivc-k">Estimated annual hard-water cost</span><span class="ivc-v reco" style="color:#fff">'+head+'</span><span class="ivc-u">'+msg+'</span>'+cta+'</div></div>';
+    }
+    [cWh,cApp,cClean].forEach(function(el){el.addEventListener('input',renderCost);});
+    renderCost();
+  }
+})();
+</script>
+</body>
+</html>

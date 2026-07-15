@@ -146,7 +146,7 @@
         </div>
       </div>
       <a href="/about">About</a>
-      
+      <a class="nav-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check Price</a>
     </nav>
   </div>
 </header>
@@ -372,7 +372,12 @@
   </div>
   <p>A salt-based softener removes the calcium and magnesium through ion exchange, so there's far less mineral for soap to react with. In features-to-benefits terms: <strong>fewer reactive minerals → less scum forms</strong>, <strong>soap rinses cleaner → clearer glass and fixtures</strong>, <strong>whole-house soft water → easier maintenance everywhere</strong>, and <strong>less buildup → less scrubbing time</strong>. If your water tests hard and you're tired of the weekly fight, the <strong>SpringWell Salt-Based Water Softener</strong> is the kind of system I'd look at to address the cause.</p>
   <div class="snote" style="background:var(--mist);border:1px solid var(--line);border-radius:12px;padding:.85rem 1rem;font-family:var(--ui);font-size:.95rem;color:var(--brand-ink);margin:1.1rem 0">Cleaning removes today's soap scum. Soft water helps reduce the reason it keeps forming.</div>
-    <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.) Not sure how hard your water is? A test kit confirms it first.</p>
+  <div class="cta-block">
+    <h3>Stop fighting the symptom — reduce the cause</h3>
+    <p>If your water tests hard, a salt-based softener means less soap scum forming in the first place — backed by a lifetime warranty and 6-month money-back trial.</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check the SpringWell Salt-Based Softener →</a>
+  </div>
+  <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.) Not sure how hard your water is? <a href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">A test kit</a> confirms it first.</p>
 
   <!-- FINAL -->
   <h2 id="final">Final recommendation</h2>
@@ -441,7 +446,6 @@
   <div class="footer-bottom">
     <div class="fb-in">
       <span>© 2026 SpringWell SS Guide. All rights reserved.</span>
-      <span>Published and controlled by WaterRefiner.</span>
       <span>SpringWell&reg; is a trademark of its respective owner. This site is not operated by SpringWell.</span>
     </div>
   </div>
@@ -479,7 +483,7 @@
         prevent='Switch to soap-free liquid wash and squeegee after showers \u2014 and soften the water to cut the minerals soap reacts with.';
       }
       var cta='';
-      if(/hard water|soap scum|limescale/i.test(name)) cta='';
+      if(/hard water|soap scum|limescale/i.test(name)) cta='<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the soft-water fix →</a>';
       document.getElementById('diagResult').innerHTML=
         '<div class="dx">'+
         '<div class="dx-row span"><span class="dx-k">Most likely</span><span class="dx-v reco" style="font-size:1.05rem;color:var(--brand-ink)">'+name+'</span></div>'+
@@ -520,7 +524,7 @@
       var msg = hard==='soft'
         ? 'With soft water, recurring scum usually comes from bar soap or wet surfaces. Switch to soap-free wash and squeegee — a softener isn\u2019t the fix here.'
         : 'That\u2019s the estimated cleaning time and product cost softer water could save each year by cutting how much scum forms. Over a decade that\u2019s real time back — plus clearer glass and easier upkeep.';
-      var cta = hard==='soft' ? '' : '';
+      var cta = hard==='soft' ? '' : '<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the softener →</a>';
       document.getElementById('calcResult').innerHTML=
         '<div class="iviz-cards"><div class="ivc hot"><span class="ivc-k">Cleaning now</span><span class="ivc-v reco" style="color:#fff">'+hrsYr.toFixed(0)+' hrs + '+money(prodYr)+'/yr</span><span class="ivc-u">time + products fighting scum</span></div>'+
         '<div class="ivc"><span class="ivc-k">Potential saving</span><span class="ivc-v">'+(hard==='soft'?'\u2014':'~'+hrsSaved.toFixed(0)+' hrs')+'</span><span class="ivc-u">'+(hard==='soft'?'already soft water':'+ '+money(prodSaved)+' products/yr')+'</span></div>'+

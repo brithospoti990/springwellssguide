@@ -138,7 +138,7 @@
         </div>
       </div>
       <a href="/about">About</a>
-      
+      <a class="nav-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check Price</a>
     </nav>
   </div>
 </header>
@@ -304,7 +304,12 @@
     <li><strong>City water quality report (CCR)</strong> — your utility's annual report usually lists hardness. It's a useful starting point but it's an average, not your tap.</li>
   </ul>
   <p>If you're on a well, test broadly — hardness, iron, manganese, pH, sulfur, TDS, and bacteria — because untreated iron or sulfur will foul a softener's resin and make it look like the softener "isn't working." If you're on city water, hardness plus chlorine/chloramine is usually enough to know what to do.</p>
-  
+  <div class="cta-block">
+    <h3>Test before you spend</h3>
+    <p>A simple test kit tells you what's actually in your water — and saves you from buying the wrong system.</p>
+    <a class="btn btn-cta btn-lg" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">See the SpringWell water test kit →</a>
+  </div>
+
   <!-- SOLUTIONS -->
   <h2 id="solutions">The best solutions for hard water</h2>
   <p>Match the fix to the problem. Here's the honest map:</p>
@@ -320,7 +325,12 @@
   <p>RO at the kitchen tap polishes drinking water (removing many dissolved solids) but isn't a whole-house solution. Pair with a softener if hardness is the main complaint.</p>
   <h3>Whole-house filter vs softener</h3>
   <p>A whole-house carbon filter handles chlorine, chloramine, taste, odor, and sediment — different job from a softener. If you have hardness <em>and</em> chlorine, the right answer is both (or a combo system). A filter alone won't fix hardness.</p>
-  
+  <div class="cta-block">
+    <h3>When your test confirms hardness, here's the direct fix</h3>
+    <p>A salt-based softener removes hardness across the whole house — backed by a lifetime warranty and 6-month money-back trial.</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">See the SpringWell Salt-Based Softener →</a>
+  </div>
+
   <!-- INTERACTIVE 2: impact calculator -->
   <div class="iviz" id="impact">
     <div class="iviz-head">
@@ -361,7 +371,7 @@
     <li><strong>Mild spots, no other symptoms?</strong> Test first. The fix may just be water-feature maintenance or a salt-free conditioner if scale control is all you need.</li>
     <li><strong>Heavy scale, stiff laundry, known high hardness?</strong> A salt-based softener is the next logical step. Size it to your home and water (see <a href="/springwell-ss1-vs-ss4">SS1 vs SS4</a>).</li>
     <li><strong>Well water?</strong> Test broadly first — hardness, iron, manganese, pH, sulfur, TDS, bacteria — so you treat <em>everything</em>, not just the most visible symptom.</li>
-    <li><strong>City water?</strong> Test for hardness, and consider chlorine/chloramine. If both are issues, a softener + carbon filter (or a combo system) handles them together.</li>
+    <li><strong>City water?</strong> Test for hardness, and consider chlorine/chloramine. If both are issues, a softener + carbon filter (or a <a href="/go/springwell-combo" rel="sponsored nofollow noopener" target="_blank">combo system</a>) handles them together.</li>
   </ul>
   <p>I would not buy a system based on white spots alone. Get the hardness number first; it's a cheap investment that keeps you from buying the wrong tool.</p>
 
@@ -398,7 +408,13 @@
   <!-- CONCLUSION -->
   <h2 id="concl">The honest bottom line</h2>
   <p>Hard water is one of the most common household problems and one of the most fixable. The order that saves you money is: <strong>identify the signs, test the water, match the solution to what's actually in it.</strong> If hardness is confirmed and the symptoms are showing up across the home, a salt-based softener is the proven whole-house fix. If your test comes back mild, you can save the spend and stick with maintenance. Either way, the worst move is buying a system based on a guess — and the best move is the cheap one: test first, then decide.</p>
-  
+  <div class="cta-block">
+    <h3>Start with a test, finish with the right fix</h3>
+    <p>Confirm your hardness number, then choose the solution that matches your actual water — not a guess.</p>
+    <a class="btn btn-cta btn-lg" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">Get the SpringWell water test kit →</a>
+    <a class="btn" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.5rem">Or see the SpringWell softener →</a>
+  </div>
+
   <p class="muted" style="font-family:var(--ui);font-size:.85rem">By <a href="/about">Scott Murley</a>. Hardness facts and ranges are general information attributed to sources such as the USGS, WQA, EPA, and NSF — not medical advice. Always confirm current product details on the manufacturer's page.</p>
 
   <!-- AUTHOR BOX -->
@@ -447,7 +463,6 @@
   <div class="footer-bottom">
     <div class="fb-in">
       <span>© 2026 SpringWell SS Guide. All rights reserved.</span>
-      <span>Published and controlled by WaterRefiner.</span>
       <span>SpringWell&reg; is a trademark of its respective owner. This site is not operated by SpringWell.</span>
     </div>
   </div>
@@ -498,8 +513,8 @@
       }
       var listHtml = items.length ? '<div class="dx-list">'+items.map(function(it){return '<div class="dx-item"><span class="lbl">'+it.k+'</span><span class="val">'+it.v+'</span></div>';}).join('')+'</div>' : '';
       var cta='';
-      if(hard && totalOn===hard) cta='';
-      else if(totalOn>0) cta='';
+      if(hard && totalOn===hard) cta='<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the softener →</a>';
+      else if(totalOn>0) cta='<a class="btn btn-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">Test your water first →</a>';
       document.getElementById('symResult').innerHTML=
         '<div class="iviz-cards" style="grid-template-columns:1fr"><div class="ivc hot"><span class="ivc-k">Diagnosis</span><span class="ivc-v reco" style="color:#fff">'+head+'</span><span class="ivc-u">'+msg+'</span>'+cta+'</div></div>'+listHtml;
     }
@@ -523,8 +538,8 @@
       // Impact score: hardness (0-30) weighted heavily + symptom counts
       var score = Math.min(100, Math.round( (g/25)*55 + hardSyms*7 + applSyms*8 + (p-1)*2 + (bath==='l'?6:bath==='m'?3:0) ));
       var band, color, head, msg, cta;
-      var testCta='';
-      var softCta='';
+      var testCta='<a class="btn btn-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the test kit →</a>';
+      var softCta='<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the softener →</a>';
       if(wellSyms>0){
         band='Well-water priority'; color='var(--rust)';
         head='Test your well water first';

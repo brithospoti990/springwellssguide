@@ -197,7 +197,7 @@
         </div>
       </div>
       <a href="/about">About</a>
-      
+      <a class="nav-cta" href="/go/springwell-combo" rel="sponsored nofollow noopener" target="_blank">Check Price</a>
     </nav>
   </div>
 </header>
@@ -378,7 +378,7 @@
       <div class="fcell"><b>Softener only</b>Your water is hard (scale, spots, dry skin) but clean and good-tasting. You need soft water, not filtration.</div>
       <div class="fcell"><b>Both</b>You have symptoms from <em>both</em> lists — contamination and hardness. This is the most common case, and a combo is the elegant fix.</div>
     </div>
-    <p style="color:#cdeae6;margin-top:.9rem;font-size:.92rem">Whichever path you're on, start by testing your water — it confirms your hardness and contaminant levels so you buy exactly what you need.</p>
+    <p style="color:#cdeae6;margin-top:.9rem;font-size:.92rem">Whichever path you're on, start by <a href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank" style="color:#7fe9dc;text-decoration:underline">testing your water</a> — it confirms your hardness and contaminant levels so you buy exactly what you need.</p>
   </div>
 
   <!-- DRINKING -->
@@ -426,7 +426,12 @@
   <!-- CROSS-SELL BUTTONS -->
   <h2 id="picks">My picks, by path</h2>
   <p>Once you know your path, here's where I'd point you:</p>
-    <p style="font-family:var(--ui)">Only one problem? Buy just what you need: the SpringWell CF1 filter for clean city water (chlorine, chloramine, VOCs), or the SpringWell SS softener for 97.5% hardness reduction with app control. And whatever you're leaning toward, test your water first.</p>
+  <div class="cta-block">
+    <h3>Need both? → SpringWell Combo</h3>
+    <p>Whole-house filtration + salt-based softening in one integrated system. Clean and soft water from every tap, space-saving and simplified. The elegant answer when you have both problems.</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-combo" rel="sponsored nofollow noopener" target="_blank">See the SpringWell Combo →</a>
+  </div>
+  <p style="font-family:var(--ui)">Only one problem? Buy just what you need: the <a href="/go/springwell-cf" rel="sponsored nofollow noopener" target="_blank">SpringWell CF1 filter</a> for clean city water (chlorine, chloramine, VOCs), or the <a href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">SpringWell SS softener</a> for 97.5% hardness reduction with app control. And whatever you're leaning toward, <a href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">test your water</a> first.</p>
   <p class="muted" style="font-family:var(--ui);font-size:.85rem">SpringWell links are affiliate links — I may earn a small commission at no extra cost to you, and it never changes my advice, including telling you when you only need one system. <a href="/affiliate-disclosure">Full disclosure</a>. Related: <a href="/salt-based-vs-salt-free-water-softener">salt-based vs salt-free</a>, <a href="/do-salt-free-water-softeners-work">do salt-free softeners work?</a>, <a href="/springwell-cf1-review">CF1 review</a>.</p>
 
   <!-- FAQ -->
@@ -509,7 +514,6 @@
   <div class="footer-bottom">
     <div class="fb-in">
       <span>© 2026 SpringWell SS Guide. All rights reserved.</span>
-      <span>Published and controlled by WaterRefiner.</span>
       <span>SpringWell&reg; is a trademark of its respective owner. This site is not operated by SpringWell.</span>
     </div>
   </div>
@@ -551,10 +555,10 @@
   var qzWrap=document.getElementById('qzQuestions');
   if(qzWrap){
     var results={
-      both:{cls:'both',tag:'You need BOTH',body:'You have both hardness symptoms and contamination symptoms — the most common situation. A combo system filters AND softens in one integrated unit: clean and soft water from every tap, space-saving and simple.',cta:'See the SpringWell Combo →',href:''},
-      filter:{cls:'filter',tag:'You need a FILTER',body:'Your issues are about water quality (chlorine, taste, contaminants), not hardness. A whole-house filter will give you clean, great-tasting water — no softener needed. Save the money.',cta:'See the SpringWell CF1 →',href:''},
-      softener:{cls:'softener',tag:'You need a SOFTENER',body:'Your issues are about hardness (scale, spots, dry skin, lather), not contamination. A softener will end the scale and transform how your water feels — no filter needed. Save the money.',cta:'See the SpringWell SS →',href:''},
-      neither:{cls:'neither',tag:'Maybe neither — test first',body:'You didn\u2019t flag clear hardness or contamination symptoms. Before buying anything, test your water: it may be fine, or the issue may be subtle. A test kit tells you exactly where you stand.',cta:'Get a water test kit →',href:''}
+      both:{cls:'both',tag:'You need BOTH',body:'You have both hardness symptoms and contamination symptoms — the most common situation. A combo system filters AND softens in one integrated unit: clean and soft water from every tap, space-saving and simple.',cta:'See the SpringWell Combo →',href:'/go/springwell-combo'},
+      filter:{cls:'filter',tag:'You need a FILTER',body:'Your issues are about water quality (chlorine, taste, contaminants), not hardness. A whole-house filter will give you clean, great-tasting water — no softener needed. Save the money.',cta:'See the SpringWell CF1 →',href:'/go/springwell-cf'},
+      softener:{cls:'softener',tag:'You need a SOFTENER',body:'Your issues are about hardness (scale, spots, dry skin, lather), not contamination. A softener will end the scale and transform how your water feels — no filter needed. Save the money.',cta:'See the SpringWell SS →',href:'/go/springwell-softener'},
+      neither:{cls:'neither',tag:'Maybe neither — test first',body:'You didn\u2019t flag clear hardness or contamination symptoms. Before buying anything, test your water: it may be fine, or the issue may be subtle. A test kit tells you exactly where you stand.',cta:'Get a water test kit →',href:'/go/test-kit'}
     };
     function compute(){
       if(answers.indexOf(null)!==-1){return null;}

@@ -144,7 +144,7 @@
         </div>
       </div>
       <a href="/about">About</a>
-      
+      <a class="nav-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check Price</a>
     </nav>
   </div>
 </header>
@@ -342,7 +342,12 @@
     <li>Low soap lather, chalky residue around sinks</li>
   </ul>
   <p>When those travel together, you're looking at whole-home hard water, and a salt-based softener is the complete fix. In features-to-benefits terms: it <strong>removes calcium and magnesium via ion exchange → fewer spots and less film</strong>; <strong>helps detergent work better → cleaner dishes with less product</strong>; <strong>protects the dishwasher and water heater → longer appliance life</strong>; and <strong>improves soap and shampoo performance → less cleaning everywhere</strong>. For a home with confirmed hard water, the <strong>SpringWell Salt-Based Water Softener</strong> is a reliable option I'd consider for that whole-home fix — it addresses the spots and the scale at the same source.</p>
-    <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.) Not sure how hard your water is? A test kit confirms it first.</p>
+  <div class="cta-block">
+    <h3>Want spot-free dishes <em>and</em> protected appliances?</h3>
+    <p>If your water tests hard, a salt-based softener removes the minerals before they reach the dishwasher — backed by a lifetime warranty and 6-month money-back trial.</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check the SpringWell Salt-Based Softener →</a>
+  </div>
+  <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.) Not sure how hard your water is? <a href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">A test kit</a> confirms it first.</p>
 
   <!-- COST -->
   <h2 id="cost">Cost &amp; effort comparison</h2>
@@ -457,7 +462,6 @@
   <div class="footer-bottom">
     <div class="fb-in">
       <span>© 2026 SpringWell SS Guide. All rights reserved.</span>
-      <span>Published and controlled by WaterRefiner.</span>
       <span>SpringWell&reg; is a trademark of its respective owner. This site is not operated by SpringWell.</span>
     </div>
   </div>
@@ -487,7 +491,7 @@
       list.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false');});
       list.querySelector('button[data-i="'+i+'"]').setAttribute('aria-pressed','true');
       var p=spots[i];
-      var cta = p.root ? '' : '';
+      var cta = p.root ? '<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.5rem">See the soft-water fix →</a>' : '';
       document.getElementById('diagResult').innerHTML=
         '<div class="dx">'+
         '<div class="dx-row"><span class="dx-k">Most likely cause</span><span class="dx-v">'+p.cause+'</span></div>'+
@@ -522,8 +526,8 @@
   var treeStep=document.getElementById('treeStep'), treePath=document.getElementById('treePath'), treeReset=document.getElementById('treeReset');
   if(treeStep){
     function ctaHtml(type){
-      if(type==='soft') return '';
-      if(type==='test') return '';
+      if(type==='soft') return '<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the SpringWell softener →</a>';
+      if(type==='test') return '<a class="btn btn-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See a water test kit →</a>';
       return '';
     }
     function renderPath(){

@@ -192,7 +192,7 @@ table.dt tr.health-row{background:#fdf3ef}
         </div>
       </div>
       <a href="/about">About</a>
-      
+      <a class="nav-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">Test Your Water</a>
     </nav>
   </div>
 </header>
@@ -387,9 +387,9 @@ table.dt tr.health-row{background:#fdf3ef}
     <caption>Your routing hub</caption>
     <thead><tr><th>If your test shows…</th><th>The problem is…</th><th>The solution is…</th></tr></thead>
     <tbody>
-      <tr><td>Hardness &gt;7 GPG</td><td>Hard water — scale, dry skin, appliance damage</td><td class="sol">Softener (SS1)</td></tr>
-      <tr><td>Chlorine / chloramine</td><td>Chemical taste/smell; skin irritation</td><td class="sol">Whole-house filter (CF1)</td></tr>
-      <tr><td>Hardness + chlorine</td><td>Both hardness AND chemicals</td><td class="sol">Filter + softener combo</td></tr>
+      <tr><td>Hardness &gt;7 GPG</td><td>Hard water — scale, dry skin, appliance damage</td><td class="sol"><a href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Softener (SS1)</a></td></tr>
+      <tr><td>Chlorine / chloramine</td><td>Chemical taste/smell; skin irritation</td><td class="sol"><a href="/go/springwell-cf" rel="sponsored nofollow noopener" target="_blank">Whole-house filter (CF1)</a></td></tr>
+      <tr><td>Hardness + chlorine</td><td>Both hardness AND chemicals</td><td class="sol"><a href="/go/springwell-combo" rel="sponsored nofollow noopener" target="_blank">Filter + softener combo</a></td></tr>
       <tr><td>Iron &gt;0.3 PPM + hardness</td><td>Iron stains AND scale</td><td class="sol"><a href="/iron-filter-before-water-softener">Iron filter + softener</a></td></tr>
       <tr class="health-row"><td>Bacteria (well)</td><td>Contamination</td><td class="sol">UV disinfection + pre-filtration</td></tr>
       <tr class="health-row"><td>Lead / heavy metals</td><td>Health risk</td><td class="sol">RO or certified whole-house filter</td></tr>
@@ -401,9 +401,14 @@ table.dt tr.health-row{background:#fdf3ef}
   <!-- TEST KIT CROSS-SELL -->
   <div class="kit-box">
     <span class="kbl">The first step</span>
-    <p><b>Better water starts with knowing what's in it.</b> A comprehensive home water test kit gives you a quick profile — hardness, pH, chlorine, iron, and more — so you can screen your water in minutes and see which fix you actually need. No guesswork, no assumptions, just a clear starting point. (For health-critical results — bacteria, nitrates, lead — follow up with a certified lab.)</p>
+    <p><b>Better water starts with knowing what's in it.</b> A comprehensive <a href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">home water test kit</a> gives you a quick profile — hardness, pH, chlorine, iron, and more — so you can screen your water in minutes and see which fix you actually need. No guesswork, no assumptions, just a clear starting point. (For health-critical results — bacteria, nitrates, lead — follow up with a certified lab.)</p>
   </div>
-    <p class="muted" style="font-family:var(--ui);font-size:.85rem">SpringWell links are affiliate links — I may earn a small commission at no extra cost to you, and it never changes my advice. <a href="/affiliate-disclosure">Full disclosure</a>. Once you know your results: SS1 softener for hardness, CF1 filter for chlorine, combo for both.</p>
+  <div class="cta-block">
+    <h3>Step one: find out what's in your water → Test kit</h3>
+    <p>Screen for hardness, pH, chlorine, iron, and more in minutes. Know exactly what your water needs before you spend a dollar on treatment — then route to the right solution.</p>
+    <a class="btn btn-cta btn-lg" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">Get a water test kit →</a>
+  </div>
+  <p class="muted" style="font-family:var(--ui);font-size:.85rem">SpringWell links are affiliate links — I may earn a small commission at no extra cost to you, and it never changes my advice. <a href="/affiliate-disclosure">Full disclosure</a>. Once you know your results: <a href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">SS1 softener</a> for hardness, <a href="/go/springwell-cf" rel="sponsored nofollow noopener" target="_blank">CF1 filter</a> for chlorine, <a href="/go/springwell-combo" rel="sponsored nofollow noopener" target="_blank">combo</a> for both.</p>
 
   <!-- HOW OFTEN -->
   <h2 id="howoften">How often should you test?</h2>
@@ -493,7 +498,6 @@ table.dt tr.health-row{background:#fdf3ef}
   <div class="footer-bottom">
     <div class="fb-in">
       <span>© 2026 SpringWell SS Guide. All rights reserved.</span>
-      <span>Published and controlled by WaterRefiner.</span>
       <span>SpringWell&reg; is a trademark of its respective owner. This site is not operated by SpringWell.</span>
     </div>
   </div>
@@ -545,11 +549,11 @@ table.dt tr.health-row{background:#fdf3ef}
   var params=[
     {id:'hardness',n:'Hardness',type:'slider',unit:' GPG',min:0,max:25,step:0.5,def:10,
       fn:function(v){ return v<3.5?{lvl:'Soft ('+v+' GPG)',mean:'No hardness issues.',sol:'No softener needed \u2014 you\u2019re set.',tone:'ok'}
-        : v<7?{lvl:'Moderately hard ('+v+' GPG)',mean:'Minor scale over time.',sol:'A softener helps if scale bothers you.',tone:'warn',cta:'',ctaTxt:'See the SS1 softener \u2192'}
-        : {lvl:'Hard ('+v+' GPG)',mean:'Scale, appliance wear, dry skin.',sol:'A water softener (SS1) is the fix.',tone:'bad',cta:'',ctaTxt:'See the SS1 softener \u2192'}; }},
+        : v<7?{lvl:'Moderately hard ('+v+' GPG)',mean:'Minor scale over time.',sol:'A softener helps if scale bothers you.',tone:'warn',cta:'/go/springwell-softener',ctaTxt:'See the SS1 softener \u2192'}
+        : {lvl:'Hard ('+v+' GPG)',mean:'Scale, appliance wear, dry skin.',sol:'A water softener (SS1) is the fix.',tone:'bad',cta:'/go/springwell-softener',ctaTxt:'See the SS1 softener \u2192'}; }},
     {id:'chlorine',n:'Chlorine',type:'slider',unit:' ppm',min:0,max:4,step:0.1,def:1,
       fn:function(v){ return v<=0.5?{lvl:'Low ('+v.toFixed(1)+' ppm)',mean:'Minimal taste or smell.',sol:'No filter strictly needed.',tone:'ok'}
-        : {lvl:'Noticeable ('+v.toFixed(1)+' ppm)',mean:'Chlorine taste/smell; dries skin/hair; ages softener resin.',sol:'A carbon filter (CF1) removes it.',tone:'warn',cta:'',ctaTxt:'See the CF1 filter \u2192'}; }},
+        : {lvl:'Noticeable ('+v.toFixed(1)+' ppm)',mean:'Chlorine taste/smell; dries skin/hair; ages softener resin.',sol:'A carbon filter (CF1) removes it.',tone:'warn',cta:'/go/springwell-cf',ctaTxt:'See the CF1 filter \u2192'}; }},
     {id:'iron',n:'Iron',type:'slider',unit:' ppm',min:0,max:7,step:0.1,def:0.5,
       fn:function(v){ return v<0.3?{lvl:'Low ('+v.toFixed(1)+' ppm)',mean:'Below the staining threshold.',sol:'No iron treatment needed.',tone:'ok'}
         : {lvl:'Elevated ('+v.toFixed(1)+' ppm)',mean:'Orange stains, metallic taste; fouls softener resin.',sol:'An iron filter BEFORE a softener.',tone:'bad',cta:'/iron-filter-before-water-softener',ctaTxt:'Iron-before-softener guide \u2192',internal:true}; }},

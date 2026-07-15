@@ -147,7 +147,7 @@
         </div>
       </div>
       <a href="/about">About</a>
-      
+      <a class="nav-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check Price</a>
     </nav>
   </div>
 </header>
@@ -319,7 +319,12 @@
   <h2 id="springwell">SpringWell sizing guidance</h2>
   <p>Once you have your grain number, matching it to a SpringWell system is straightforward, because their salt-based line is built around household size. The <strong>SpringWell Salt-Based Water Softener</strong> comes in sizes that map cleanly to the calculator's output: a smaller configuration for roughly 1–3 bathroom homes, and a larger one for 4–6+ bathroom or higher-demand homes. The benefit of getting the size right isn't just avoiding hard water — for a family with hard water, the right SpringWell size means the system <strong>doesn't have to regenerate constantly</strong>, which translates to steadier soft water, less salt waste, and fewer surprises in the shower.</p>
   <p>My suggestion: run the calculator first, then match your result to the right system size. If your number lands in the smaller range, the SS1-class size covers it; if it's larger or your water is very hard, step up to the SS4-class size. (Confirm the current grain ratings and flow specs on the product page, since manufacturers update them.)</p>
-    <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.) See also the full <a href="/">SpringWell softener review</a> and <a href="/springwell-water-softener-cost">cost breakdown</a>.</p>
+  <div class="cta-block">
+    <h3>Got your grain number? Match it to a system</h3>
+    <p>Use the calculator above, then check the current SpringWell softener sizes and specs — right-sizing means steadier soft water and less salt waste, backed by a lifetime warranty and 6-month trial.</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check the current SpringWell softener options →</a>
+  </div>
+  <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.) See also the full <a href="/">SpringWell softener review</a> and <a href="/springwell-water-softener-cost">cost breakdown</a>.</p>
 
   <!-- COMBO -->
   <h2 id="combo">Cross-sell: when to choose a filter + softener combo</h2>
@@ -331,7 +336,13 @@
     <li><strong>Known lead concerns?</strong> A softener does <em>not</em> remove lead — you'd need a certified lead-reduction filter for that, in addition to softening. Test first.</li>
   </ul>
   <p>If your water has hardness plus chlorine taste or odor, compare the combo before buying a softener alone — it's often more cost-effective than adding filtration later. The decision tool below walks you through it.</p>
-  
+  <div class="cta-block">
+    <h3>Hardness plus taste, odor, or well-water issues?</h3>
+    <p>A filter + softener combo treats both at once. Compare combo options if you have more than just scale.</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-combo" rel="sponsored nofollow noopener" target="_blank">Compare filter + softener combos →</a>
+    <a class="btn" href="/go/springwell-well" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.5rem">Or see well-water (iron) + softener →</a>
+  </div>
+
   <!-- INTERACTIVE 2: decision flowchart -->
   <div class="iviz" id="flow">
     <div class="iviz-head">
@@ -431,7 +442,6 @@
   <div class="footer-bottom">
     <div class="fb-in">
       <span>© 2026 SpringWell SS Guide. All rights reserved.</span>
-      <span>Published and controlled by WaterRefiner.</span>
       <span>SpringWell&reg; is a trademark of its respective owner. This site is not operated by SpringWell.</span>
     </div>
   </div>
@@ -472,11 +482,11 @@
         '<div class="so"><span class="sk">'+regen+'-day requirement</span><span class="sv" style="font-size:1.25rem">'+req.toLocaleString()+'</span><span class="su">demand × '+regen+' days</span></div>'+
         ironNote+
         '<div class="so big"><span class="sk">Recommended capacity</span><span class="sv">'+rec.toLocaleString()+'-grain</span><span class="su">points toward the SpringWell '+sw+'</span></div>';
-      var cta='';
+      var cta='<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See SpringWell softener sizes →</a>';
       var extra='';
       if(iron>0){
         extra=' Because you entered iron, well water with iron often needs a dedicated iron filter ahead of the softener — and a lab test first.';
-        cta+=' ';
+        cta+=' <a class="btn" href="/go/springwell-well" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.5rem">See well + iron systems →</a>';
       }
       document.getElementById('calcResult').innerHTML=
         '<div class="iviz-cards" style="grid-template-columns:1fr"><div class="ivc hot"><span class="ivc-k">Your recommended size</span><span class="ivc-v reco" style="color:#fff">'+rec.toLocaleString()+'-grain system</span><span class="ivc-u">Sized for regeneration about every '+regen+' days at your hardness'+(comp>gpg?' (iron-compensated)':'')+'.'+extra+'</span>'+cta+'</div></div>';
@@ -512,10 +522,10 @@
   var flowStep=document.getElementById('flowStep'), flowPath=document.getElementById('flowPath'), flowReset=document.getElementById('flowReset');
   if(flowStep){
     function ctaHtml(type){
-      if(type==='soft') return '';
-      if(type==='combo') return '';
-      if(type==='well') return '';
-      if(type==='test') return '';
+      if(type==='soft') return '<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the SpringWell softener →</a>';
+      if(type==='combo') return '<a class="btn btn-cta" href="/go/springwell-combo" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">Compare filter + softener combos →</a>';
+      if(type==='well') return '<a class="btn btn-cta" href="/go/springwell-well" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See well (iron) + softener →</a>';
+      if(type==='test') return '<a class="btn btn-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See a water test kit →</a>';
       return '';
     }
     function renderPath(){ flowPath.innerHTML=path.map(function(p){return '<span>'+p+'</span>';}).join(''); }

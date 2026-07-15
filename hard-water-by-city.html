@@ -222,7 +222,7 @@ table.dt .c-vhard{color:#bd4a2e;font-weight:700}
         </div>
       </div>
       <a href="/about">About</a>
-      
+      <a class="nav-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check Price</a>
     </nav>
   </div>
 </header>
@@ -473,13 +473,18 @@ table.dt .c-vhard{color:#bd4a2e;font-weight:700}
     <span class="tb-lbl">Three ways to know for sure</span>
     <p><b>1. Read your CCR.</b> Every US community water system publishes a free annual Consumer Confidence Report, which usually lists hardness. Find it on your utility's website.</p>
     <p><b>2. Call your utility.</b> Ask directly: "What's our average hardness in PPM or GPG?" They'll tell you.</p>
-    <p><b>3. Test your water.</b> The most accurate method for <em>your</em> tap — a home test kit gives your exact hardness (and other contaminants), which is what you'd size a softener around. City averages vary by neighborhood and even by street.</p>
+    <p><b>3. Test your water.</b> The most accurate method for <em>your</em> tap — a home <a href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">test kit</a> gives your exact hardness (and other contaminants), which is what you'd size a softener around. City averages vary by neighborhood and even by street.</p>
   </div>
 
   <!-- SOLUTION -->
   <h2 id="solution">The solution: softeners &amp; filters</h2>
   <p>Once you know your number, the path is simple. If your water is <strong>hard (121+ PPM)</strong>, a water softener isn't a luxury — it's the fix for scale, spots, dry skin, and appliance wear, and at very hard levels it pays back through longer appliance life and lower energy bills.</p>
-    <p style="font-family:var(--ui)">If your city water also has a <strong>chlorine or pool smell</strong>, add the CF1 whole-house filter — or get both in one with the SpringWell Combo. Not sure which you need? See <a href="/water-filter-vs-water-softener">filter vs softener</a> and <a href="/how-to-treat-hard-city-water">how to treat hard city water</a>. To compare softeners, see <a href="/best-salt-based-water-softener">the best salt-based softeners</a> and <a href="/how-do-water-softeners-work">how softeners work</a>.</p>
+  <div class="cta-block">
+    <h3>Hard water? → SpringWell SS1</h3>
+    <p>Salt-based softening with a documented 97.5% hardness reduction, Bluetooth app control, up to 20 GPM flow, and a lifetime warranty. The direct fix for hard water. (Not sure it's worth it at your level? <a href="/are-water-softeners-worth-it">Run the numbers first</a>.)</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">See the SpringWell SS1 →</a>
+  </div>
+  <p style="font-family:var(--ui)">If your city water also has a <strong>chlorine or pool smell</strong>, add the <a href="/go/springwell-cf" rel="sponsored nofollow noopener" target="_blank">CF1 whole-house filter</a> — or get both in one with the <a href="/go/springwell-combo" rel="sponsored nofollow noopener" target="_blank">SpringWell Combo</a>. Not sure which you need? See <a href="/water-filter-vs-water-softener">filter vs softener</a> and <a href="/how-to-treat-hard-city-water">how to treat hard city water</a>. To compare softeners, see <a href="/best-salt-based-water-softener">the best salt-based softeners</a> and <a href="/how-do-water-softeners-work">how softeners work</a>.</p>
   <p class="muted" style="font-family:var(--ui);font-size:.85rem">SpringWell links are affiliate links — I may earn a small commission at no extra cost to you, and it never changes my advice, including telling you when your water is soft enough that you don't need anything. <a href="/affiliate-disclosure">Full disclosure</a>.</p>
 
   <!-- FAQ -->
@@ -562,7 +567,6 @@ table.dt .c-vhard{color:#bd4a2e;font-weight:700}
   <div class="footer-bottom">
     <div class="fb-in">
       <span>© 2026 SpringWell SS Guide. All rights reserved.</span>
-      <span>Published and controlled by WaterRefiner.</span>
       <span>SpringWell&reg; is a trademark of its respective owner. This site is not operated by SpringWell.</span>
     </div>
   </div>
@@ -601,7 +605,7 @@ table.dt .c-vhard{color:#bd4a2e;font-weight:700}
         el.className='lk-result show none';
         el.innerHTML='<div class="lk-city">City not in our list</div>'+
           '<p style="margin:.2rem 0 0">No problem — city averages only get you so far anyway. The exact hardness at <b>your</b> tap is what matters, and a home test gives you that number (plus what else is in your water).</p>'+
-          'Test your water →';
+          '<a class="lk-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">Test your water →</a>';
         return;
       }
       var ppm=m[2], gpg=(ppm/17.1).toFixed(1), cat=classify(ppm), c=CATS[cat];
@@ -615,8 +619,8 @@ table.dt .c-vhard{color:#bd4a2e;font-weight:700}
         '<div class="lk-scalelbl"><span>0</span><span>60</span><span>120</span><span>180</span><span>400+</span></div>'+
         '<div class="lk-rec">'+recs[cat]+'</div>'+
         (cat==='soft'
-          ? 'Confirm with a test →'
-          : 'See the SS1 softener →')+
+          ? '<a class="lk-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">Confirm with a test →</a>'
+          : '<a class="lk-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">See the SS1 softener →</a>')+
         '<p style="font-size:.76rem;color:#6b7c79;margin:.6rem 0 0">Approximate reported average — test your tap for the exact number.</p>';
     }
     lkBtn.addEventListener('click',doLookup);

@@ -155,7 +155,7 @@
         </div>
       </div>
       <a href="/about">About</a>
-      
+      <a class="nav-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check Price</a>
     </nav>
   </div>
 </header>
@@ -344,7 +344,12 @@
   <p>Once you've calculated your required grain capacity, the next step is choosing a system that fits — and here, capacity is just the start. The features I'd insist on: <strong>demand-initiated (metered) regeneration</strong> (regenerates on actual use, not a wasteful timer — saving salt and water), <strong>quality resin</strong> (it's what your capacity literally depends on), a <strong>reliable control valve</strong>, and a <strong>strong warranty</strong>.</p>
   <p>For context, this is a fast-growing category — one market analysis valued the global water-softener market at roughly <strong>$5 billion in 2023, projected toward $8 billion by the early 2030s</strong>, with "smart" softeners growing especially fast (estimates vary widely by source, but the direction is clear: lots of new options, and lots of marketing noise to cut through). All the more reason to size by the math, not the sales pitch.</p>
   <p>The system I use and recommend is the <strong>SpringWell Salt-Based Water Softener</strong>. It does true ion-exchange softening with efficient metered regeneration (so you're not flooding it with salt to hit capacity), comes sized for different home sizes, and is backed by a lifetime warranty and a 6-month money-back trial. Once you have your grain number from the calculator, matching it to the right SpringWell size is simple — and the benefit of the right size is exactly what this whole article is about: regeneration in that healthy 3–10 day window, steady soft water, and minimal salt waste.</p>
-    <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.) Before calculating anything, test your hardness so your numbers are real. For the full model recommendation, use the <a href="/what-size-water-softener-do-i-need">sizing calculator</a>, and see how it all works in <a href="/how-do-water-softeners-work">how do water softeners work?</a></p>
+  <div class="cta-block">
+    <h3>Got your number? Match it to a system</h3>
+    <p>True ion-exchange softening with efficient metered regeneration — sized for your home, backed by a lifetime warranty and 6-month trial.</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check the SpringWell softener sizes →</a>
+  </div>
+  <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.) Before calculating anything, <a href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">test your hardness</a> so your numbers are real. For the full model recommendation, use the <a href="/what-size-water-softener-do-i-need">sizing calculator</a>, and see how it all works in <a href="/how-do-water-softeners-work">how do water softeners work?</a></p>
 
   <!-- FAQ -->
   <h2 id="faq">Frequently asked questions</h2>
@@ -426,7 +431,6 @@
   <div class="footer-bottom">
     <div class="fb-in">
       <span>© 2026 SpringWell SS Guide. All rights reserved.</span>
-      <span>Published and controlled by WaterRefiner.</span>
       <span>SpringWell&reg; is a trademark of its respective owner. This site is not operated by SpringWell.</span>
     </div>
   </div>
@@ -473,7 +477,7 @@
       if(upDays>14){
         warn+='<div class="warn-line warn-big">Tip: jumping to '+SIZES[Math.min(idx+2,SIZES.length-1)].toLocaleString()+'+ would regenerate only every ~'+upDays+' days — risk of stale water and wasted money. Bigger isn\u2019t safer here.</div>';
       }
-      var cta=' <a class="btn" href="/what-size-water-softener-do-i-need" style="margin-top:.5rem">Get a model recommendation →</a>';
+      var cta='<a class="btn btn-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.5rem">Confirm your hardness with a test →</a> <a class="btn" href="/what-size-water-softener-do-i-need" style="margin-top:.5rem">Get a model recommendation →</a>';
       document.getElementById('calcResult').innerHTML=
         '<div class="iviz-cards" style="grid-template-columns:1fr"><div class="ivc hot"><span class="ivc-k">Your recommended capacity</span><span class="ivc-v reco" style="color:#fff">'+rec.toLocaleString()+'-grain · regenerates ~every '+regenDays+' days</span><span class="ivc-u">Sized for about-weekly regeneration at your water'+(comp>gpg?' (iron-compensated)':'')+'. Remember: the rated number needs high salt — efficient operation gives ~'+actual.toLocaleString()+' usable grains.</span></div></div>'+warn+'<div style="margin-top:.6rem">'+cta+'</div>';
     }

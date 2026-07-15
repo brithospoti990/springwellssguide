@@ -143,7 +143,7 @@
         </div>
       </div>
       <a href="/about">About</a>
-      
+      <a class="nav-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check Price</a>
     </nav>
   </div>
 </header>
@@ -217,7 +217,12 @@
   </table>
   </div>
   <p>Why this matters in practice: once you know your hardness in grains per gallon, you can estimate whether you're dealing with minor spotting, real scale buildup, or water that may justify a softener — instead of guessing from symptoms alone.</p>
-  
+  <div class="cta-block">
+    <h3>Not sure where your home falls on the scale?</h3>
+    <p>Start with a simple water hardness test before choosing any treatment system — it turns guesswork into a real number.</p>
+    <a class="btn btn-cta btn-lg" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">See a water hardness test kit →</a>
+  </div>
+
   <!-- CONVERT -->
   <h2 id="convert">How to convert ppm to GPG (and back)</h2>
   <p>The whole translation comes down to one number: <strong>1 grain per gallon = 17.1 ppm (mg/L) as calcium carbonate</strong>. So:</p>
@@ -328,7 +333,12 @@
   </table>
   </div>
   <p>For most homeowners, a strip or drop kit answers the immediate question — "how hard is my water?" — in minutes. If you do not already have a recent water report, a test kit is the easiest way to turn symptoms into real numbers.</p>
-    <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.)</p>
+  <div class="cta-block">
+    <h3>Turn your symptoms into a real number</h3>
+    <p>A simple hardness test tells you exactly where you fall on the scale — the right first step before any treatment decision.</p>
+    <a class="btn btn-cta btn-lg" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">See a water hardness test kit →</a>
+  </div>
+  <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.)</p>
 
   <!-- INTERACTIVE 2: symptom checker -->
   <div class="iviz" id="sym">
@@ -435,7 +445,6 @@
   <div class="footer-bottom">
     <div class="fb-in">
       <span>© 2026 SpringWell SS Guide. All rights reserved.</span>
-      <span>Published and controlled by WaterRefiner.</span>
       <span>SpringWell&reg; is a trademark of its respective owner. This site is not operated by SpringWell.</span>
     </div>
   </div>
@@ -464,7 +473,7 @@
       if(unit==='ppm'){ ppm=val; gpg=val/CONV; } else { gpg=val; ppm=val*CONV; }
       var c=categorize(gpg);
       var showTest = gpg>=3.5;
-      var cta = showTest ? '' : '';
+      var cta = showTest ? '<a class="btn btn-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">Confirm with a test kit →</a>' : '';
       document.getElementById('convResult').innerHTML=
         '<div class="iviz-cards">'+
         '<div class="ivc hot"><span class="ivc-k">Equivalent</span><span class="ivc-v reco" style="color:#fff">'+gpg.toFixed(1)+' GPG</span><span class="ivc-u">= '+Math.round(ppm)+' ppm / mg/L</span></div>'+
@@ -483,7 +492,7 @@
       var on=symChips.querySelectorAll('button[data-on="true"]').length;
       var total=symChips.querySelectorAll('button').length;
       var color,head,range,msg,cta='';
-      var testCta='';
+      var testCta='<a class="btn btn-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See a water test kit →</a>';
       if(on===0){
         color='var(--cta)'; head='No symptoms selected'; range='\u2014';
         msg='Tap the signs you\u2019re seeing and we\u2019ll estimate your likely hardness range.';

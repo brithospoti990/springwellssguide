@@ -144,7 +144,7 @@
         </div>
       </div>
       <a href="/about">About</a>
-      
+      <a class="nav-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check Price</a>
     </nav>
   </div>
 </header>
@@ -360,7 +360,12 @@
     <li>For <strong>well water</strong>, also test for iron, manganese, pH, TDS, sulfur, bacteria, nitrates, arsenic, and other local risks.</li>
   </ul>
   <p>Here's the important nuance: a <strong>hardness test</strong> helps you choose a softener size, but a <strong>broader water test</strong> tells you whether your home also needs filtration. If your only question is "how hard is my water," a strip or drop kit answers it in minutes. If safety is on your mind, go broader.</p>
-    <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.)</p>
+  <div class="cta-block">
+    <h3>Start by confirming your hardness</h3>
+    <p>A simple test turns symptoms into a real number — the right first step before any equipment decision.</p>
+    <a class="btn btn-cta btn-lg" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">See a water hardness test kit →</a>
+  </div>
+  <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.)</p>
 
   <!-- WHEN SOFTENER -->
   <h2 id="softener">When a water softener makes sense</h2>
@@ -377,7 +382,12 @@
     <li>You want <strong>whole-house protection</strong>, not just shower filters</li>
   </ul>
   <p>If the main problem is true hardness — calcium and magnesium scale — I usually look at a salt-based softener first. A system like the <strong>SpringWell Salt-Based Water Softener</strong> is designed to remove hardness minerals before they reach the fixtures, water heater, laundry, and showers. In features-to-benefits terms: because it removes the minerals that form scale, it can help your water feel better in the shower, reduce soap waste, protect water heaters and fixtures, and make cleaning less frustrating.</p>
-    <p class="muted" style="font-family:var(--ui);font-size:.85rem">Comparing options? See <a href="/#saltfree">salt-based vs salt-free</a>, the full <a href="/">softener review</a>, and the <a href="/springwell-water-softener-cost">cost breakdown</a>.</p>
+  <div class="cta-block">
+    <h3>Want a whole-house fix for confirmed hard water?</h3>
+    <p>A salt-based softener removes the minerals before they reach your home — backed by a lifetime warranty and 6-month money-back trial.</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">See the SpringWell Salt-Based Softener →</a>
+  </div>
+  <p class="muted" style="font-family:var(--ui);font-size:.85rem">Comparing options? See <a href="/#saltfree">salt-based vs salt-free</a>, the full <a href="/">softener review</a>, and the <a href="/springwell-water-softener-cost">cost breakdown</a>.</p>
 
   <!-- DOES / DOESN'T -->
   <h2 id="does">What a water softener does — and what it doesn't do</h2>
@@ -492,7 +502,6 @@
   <div class="footer-bottom">
     <div class="fb-in">
       <span>© 2026 SpringWell SS Guide. All rights reserved.</span>
-      <span>Published and controlled by WaterRefiner.</span>
       <span>SpringWell&reg; is a trademark of its respective owner. This site is not operated by SpringWell.</span>
     </div>
   </div>
@@ -528,7 +537,7 @@
       document.getElementById('symHome').textContent=homeLevel;
       var hb=document.getElementById('symHomeBar'); hb.style.width=homePct+'%'; hb.style.background=homeColor;
       // health readout stays low/separate regardless — reinforces article thesis
-      var cta='';
+      var cta='<a class="btn btn-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">Confirm with a hardness test →</a>';
       document.getElementById('symResult').innerHTML=
         '<div class="iviz-cards" style="grid-template-columns:1fr"><div class="ivc hot"><span class="ivc-k">'+on+' of '+total+' signs</span><span class="ivc-v reco" style="color:#fff">'+head+'</span><span class="ivc-u">'+msg+' Remember: these signs are about your <em>home</em>, not your health \u2014 hardness isn\u2019t a safety hazard, but it also can\u2019t rule out contaminants, so test separately if safety is your concern.</span>'+cta+'</div></div>';
     }
@@ -559,8 +568,8 @@
       var attributable = Math.round( ((soap+clean)*12*(0.4+0.6*hMult) + bottle*12 + repair + wear) /10)*10;
       var low=Math.round(attributable*0.8/10)*10, high=Math.round(attributable*1.25/10)*10;
       var head,msg,cta='';
-      var softCta='';
-      var testCta='';
+      var softCta='<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the softener →</a>';
+      var testCta='<a class="btn btn-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">Test your hardness first →</a>';
       if(hard==='soft'){
         head='Low hard-water cost — your water is soft';
         msg='With soft water, little of this spending is due to hardness. Recurring costs are likely from other causes.';

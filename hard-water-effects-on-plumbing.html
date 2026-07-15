@@ -135,7 +135,7 @@
         </div>
       </div>
       <a href="/about">About</a>
-      
+      <a class="nav-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check Price</a>
     </nav>
   </div>
 </header>
@@ -335,7 +335,12 @@
     <li><strong>Professional water test</strong> — a treatment pro can test on-site and interpret it for your home.</li>
   </ul>
   <p>Knowing the hardness level matters because it tells you whether you need treatment at all, what size, and whether something else (like iron) needs handling first. (More in <a href="/what-is-considered-hard-water">what is considered hard water?</a>)</p>
-  
+  <div class="cta-block">
+    <h3>Turn symptoms into a real number</h3>
+    <p>A simple hardness test confirms whether scale is a real risk for your plumbing before you decide on any system.</p>
+    <a class="btn btn-cta btn-lg" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">See a water hardness test kit →</a>
+  </div>
+
   <!-- INTERACTIVE 2: cost estimator -->
   <div class="iviz" id="cost">
     <div class="iviz-head">
@@ -388,7 +393,12 @@
     <li><strong>Reduces cleaning effort → fixtures stay cleaner longer</strong>, with far less scrubbing and descaling.</li>
   </ul>
   <p>For a home with real, tested hard water, this is the type of system I'd look at to protect the whole house at once. The <strong>SpringWell Salt-Based Water Softener</strong> is a strong option here — true ion-exchange softening, sized for different home sizes, built to run efficiently with metered regeneration. If your goal is to protect your plumbing, fixtures, water heater, and appliances from years of slow scale damage, this is the category of fix that addresses the cause rather than the symptoms.</p>
-    <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.) Weighing salt vs salt-free? See <a href="/#saltfree">the comparison</a>, or the full <a href="/">softener review</a>.</p>
+  <div class="cta-block">
+    <h3>Protect the whole house at the source</h3>
+    <p>If your water tests hard, a salt-based softener stops scale before it reaches your pipes — backed by a lifetime warranty and 6-month money-back trial.</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check the SpringWell Salt-Based Softener →</a>
+  </div>
+  <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: some links here are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation. (<a href="/affiliate-disclosure">Full disclosure</a>.) Weighing salt vs salt-free? See <a href="/#saltfree">the comparison</a>, or the full <a href="/">softener review</a>.</p>
 
   <!-- WHO -->
   <h2 id="who">Who should consider a salt-based softener (and who may not need one)</h2>
@@ -495,7 +505,6 @@
   <div class="footer-bottom">
     <div class="fb-in">
       <span>© 2026 SpringWell SS Guide. All rights reserved.</span>
-      <span>Published and controlled by WaterRefiner.</span>
       <span>SpringWell&reg; is a trademark of its respective owner. This site is not operated by SpringWell.</span>
     </div>
   </div>
@@ -525,8 +534,8 @@
       var whBonus = wh==='tankless'?6:wh==='tank'?3:0;
       var score=Math.min(100, Math.max(3, Math.round( (g/26)*46 + (p-1)*2 + pipeBonus + ageBonus + scaleBonus + whBonus )));
       var band,color,head,msg,cta='';
-      var testCta='';
-      var softCta='';
+      var testCta='<a class="btn btn-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">Confirm with a test kit →</a>';
+      var softCta='<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the softener →</a>';
       var pipeNote = pipe==='galv' ? ' Galvanized pipe is especially vulnerable to scale plus corrosion.' : pipe==='pex' ? ' PEX resists buildup, but fittings and the water heater still scale.' : '';
       if(score<34){
         band='Low plumbing risk'; color='var(--cta)';
@@ -582,8 +591,8 @@
         '<div class="row"><span class="lbl">Cleaning products</span><div class="track"><span style="width:'+(products/maxV*100)+'%"></span></div><span class="amt">'+money(products)+'/yr</span></div>'+
         '<div class="row"><span class="lbl">Fixtures / clogs</span><div class="track"><span style="width:'+(fixtures/maxV*100)+'%"></span></div><span class="amt">'+money(fixtures)+'/yr</span></div>';
       var head, msg, cta='';
-      var softCta='';
-      var testCta='';
+      var softCta='<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the softener →</a>';
+      var testCta='<a class="btn btn-cta" href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">Test your hardness first →</a>';
       if(hard==='soft'){
         head='Low estimated cost — your water is soft';
         msg='With soft water, hard-water costs are minimal. Recurring fixture or appliance issues are likely from something other than hardness.';

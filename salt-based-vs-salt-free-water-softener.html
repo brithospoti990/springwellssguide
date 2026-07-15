@@ -171,7 +171,7 @@
         </div>
       </div>
       <a href="/about">About</a>
-      
+      <a class="nav-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check Price</a>
     </nav>
   </div>
 </header>
@@ -400,10 +400,20 @@
 
   <h3>If salt-based is right: the SpringWell Salt-Based Softener</h3>
   <p>If your water is hard (above ~10 GPG) and you want complete hardness removal, the SpringWell salt-based softener is my recommendation. It delivers around <strong>97.5% hardness reduction</strong>, efficient demand-initiated regeneration (so you're not wasting salt), handling of <strong>modest iron (up to ~3 ppm)</strong>, <strong>Bluetooth app monitoring</strong>, and a <strong>lifetime warranty with a 6-month money-back trial</strong>. It's built for homeowners who need real results in genuinely hard water.</p>
-  
+  <div class="cta-block">
+    <h3>SpringWell Salt-Based Softener</h3>
+    <p>True ion-exchange softening for hard water — efficient, app-monitored, iron-capable, and backed by a lifetime warranty and 6-month trial.</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check the salt-based softener →</a>
+  </div>
+
   <h3>If salt-free is right: the SpringWell FutureSoft</h3>
   <p>If you're in a salt-restricted area, on a sodium-restricted diet, or simply want a low-maintenance, eco-friendly solution for milder water, the SpringWell FutureSoft leads the salt-free category. It uses TAC for scale prevention with a strong <strong>~12 GPM flow rate</strong> (no pressure drop), a <strong>lifetime warranty</strong>, and <strong>no salt, no electricity, and no wastewater</strong>. It's the smart choice for the right situation — just remember it conditions rather than softens.</p>
-    <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: both links are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation, and as you've seen, I'll point you to whichever technology actually fits. (<a href="/affiliate-disclosure">Full disclosure</a>.) First, test your hardness. New here? Start with the <a href="/water-softener-buyers-guide">buyer's guide</a> or the <a href="/best-salt-based-water-softener">best salt-based roundup</a>.</p>
+  <div class="cta-block">
+    <h3>SpringWell FutureSoft (Salt-Free)</h3>
+    <p>TAC scale prevention with no salt, no electricity, and no wastewater — high flow and a lifetime warranty for salt-restricted or eco-conscious homes.</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-futuresoft" rel="sponsored nofollow noopener" target="_blank">Check the FutureSoft salt-free →</a>
+  </div>
+  <p class="muted" style="font-family:var(--ui);font-size:.85rem">A friendly note: both links are affiliate links — if you buy through them I may earn a small commission at no extra cost to you. It never changes my recommendation, and as you've seen, I'll point you to whichever technology actually fits. (<a href="/affiliate-disclosure">Full disclosure</a>.) First, <a href="/go/test-kit" rel="sponsored nofollow noopener" target="_blank">test your hardness</a>. New here? Start with the <a href="/water-softener-buyers-guide">buyer's guide</a> or the <a href="/best-salt-based-water-softener">best salt-based roundup</a>.</p>
 
   <!-- FAQ -->
   <h2 id="faq">Frequently asked questions</h2>
@@ -485,7 +495,6 @@
   <div class="footer-bottom">
     <div class="fb-in">
       <span>© 2026 SpringWell SS Guide. All rights reserved.</span>
-      <span>Published and controlled by WaterRefiner.</span>
       <span>SpringWell&reg; is a trademark of its respective owner. This site is not operated by SpringWell.</span>
     </div>
   </div>
@@ -535,9 +544,9 @@
   if(fStep){
     var path=[];
     function ctaEnd(n){
-      if(n.cta==='based') return ' <a class="btn" href="/what-size-water-softener-do-i-need" style="margin-top:.6rem">Size it →</a>';
-      if(n.cta==='free') return '';
-      if(n.cta==='freeAlt') return ' ';
+      if(n.cta==='based') return '<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.6rem">See the salt-based softener →</a> <a class="btn" href="/what-size-water-softener-do-i-need" style="margin-top:.6rem">Size it →</a>';
+      if(n.cta==='free') return '<a class="btn btn-cta" href="/go/springwell-futuresoft" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.6rem">See the FutureSoft salt-free →</a>';
+      if(n.cta==='freeAlt') return '<a class="btn btn-cta" href="/go/springwell-futuresoft" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.6rem">See the FutureSoft salt-free →</a> <a class="btn" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.6rem">Or salt-based + potassium →</a>';
       return '';
     }
     function renderPath(){ fPath.innerHTML=path.map(function(p){return '<span>'+p+'</span>';}).join(''); }

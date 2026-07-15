@@ -130,7 +130,7 @@
         </div>
       </div>
       <a href="/about">About</a>
-      
+      <a class="nav-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check Price</a>
     </nav>
   </div>
 </header>
@@ -180,7 +180,12 @@
     </div>
     <p>If you're fighting scale, soap that won't lather, spotty dishes, and appliances aging fast, the SpringWell salt-based softener is worth it: it removes hardness for real, runs on almost no attention, and is backed by a lifetime warranty — and the harder your water, the faster the value piles up. Where I'd pump the brakes is if your water is only mildly hard, you rent, or your actual complaint is taste or contaminants rather than hardness. In those cases you're either over-buying or buying the wrong tool.</p>
   </div>
-  
+  <div class="cta-block">
+    <h3>See if the SpringWell salt-based softener fits your home</h3>
+    <p>Free shipping · lifetime warranty · 6-month money-back guarantee.</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">Check current SpringWell pricing →</a>
+  </div>
+
   <!-- MEANING -->
   <h2 id="meaning">What "worth it" really means for a water softener</h2>
   <p>"Worth it" is not the sticker price. A softener is a system you'll live with for a decade, so the honest question is total value over that life: how well it performs, how long it lasts, what salt and water cost you each year, how much it protects your appliances and plumbing, and how much daily friction it removes. A cheap softener that quits in four years and burns salt on a dumb timer can cost more over ten years than a premium one that sips salt and never needs replacing. So when I weigh "worth it," I'm weighing <strong>cost of ownership against everything it saves and spares you</strong> — not just what shows on the receipt.</p>
@@ -254,7 +259,7 @@
 
   <!-- CROSS-SELL -->
   <h2 id="need">When I'd add the SpringWell whole-house filter — softener, filter, or both?</h2>
-  <p>The clean rule: a softener handles hardness; a whole-house carbon filter handles chlorine, chloramine, taste, odor, and sediment. So if you've got hard water <em>and</em> a chlorine smell or flat taste from city water, pairing the two — or going with SpringWell's filter-plus-softener combo — gives a more complete result than either alone. If hardness is your only issue, the softener by itself is enough; if you have no hardness but hate the chlorine taste, a filter alone is the answer. And on well water with iron or sulfur, treat those first — they need dedicated pre-treatment before any softener. The tool below sorts your case in a few taps.</p>
+  <p>The clean rule: a softener handles hardness; a <a href="/go/springwell-cf" rel="sponsored nofollow noopener" target="_blank">whole-house carbon filter</a> handles chlorine, chloramine, taste, odor, and sediment. So if you've got hard water <em>and</em> a chlorine smell or flat taste from city water, pairing the two — or going with SpringWell's <a href="/go/springwell-combo" rel="sponsored nofollow noopener" target="_blank">filter-plus-softener combo</a> — gives a more complete result than either alone. If hardness is your only issue, the softener by itself is enough; if you have no hardness but hate the chlorine taste, a filter alone is the answer. And on well water with iron or sulfur, treat those first — they need dedicated pre-treatment before any softener. The tool below sorts your case in a few taps.</p>
 
   <!-- INTERACTIVE 2: softener/filter/both decision tool -->
   <div class="iviz" id="need-tool">
@@ -308,7 +313,12 @@
   <!-- FINAL VERDICT -->
   <h2 id="verdict-final">My honest verdict</h2>
   <p>Here's where I land. For a home with real hard water — the kind that's costing you appliances, soap, and Saturday afternoons scrubbing scale — the SpringWell salt-based softener is worth it. It does the one job a softener should do, it does it with almost no fuss, and the lifetime warranty plus metered efficiency make the long-term math work, especially as your hardness climbs. The best value shows up when hard water is a <em>daily</em> frustration or a genuine threat to expensive equipment. If your water is barely hard, or your real issue is taste or a specific contaminant, spend your money on the right tool instead — and that honesty is exactly why I'd trust the recommendation when it <em>is</em> a yes.</p>
-    <p class="muted" style="font-family:var(--ui);font-size:.9rem">Still sizing it? See <a href="/springwell-ss1-vs-ss4">SS1 vs SS4</a> and the <a href="/springwell-ss4-review">SS4 review</a> — and if city-water chlorine is also a problem, consider pairing a whole-house filter.</p>
+  <div class="cta-block">
+    <h3>Check current SpringWell softener pricing</h3>
+    <p>Pick your size, see today's price, and read the lifetime warranty and 6-month guarantee.</p>
+    <a class="btn btn-cta btn-lg" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank">View the SpringWell Salt-Based Softener →</a>
+  </div>
+  <p class="muted" style="font-family:var(--ui);font-size:.9rem">Still sizing it? See <a href="/springwell-ss1-vs-ss4">SS1 vs SS4</a> and the <a href="/springwell-ss4-review">SS4 review</a> — and if city-water chlorine is also a problem, <a href="/go/springwell-cf" rel="sponsored nofollow noopener" target="_blank">consider pairing a whole-house filter</a>.</p>
 
   <!-- FAQ -->
   <h2 id="faq">Frequently asked questions</h2>
@@ -384,7 +394,6 @@
   <div class="footer-bottom">
     <div class="fb-in">
       <span>© 2026 SpringWell SS Guide. All rights reserved.</span>
-      <span>Published and controlled by WaterRefiner.</span>
       <span>SpringWell&reg; is a trademark of its respective owner. This site is not operated by SpringWell.</span>
     </div>
   </div>
@@ -437,9 +446,9 @@
     function renderNeed(){
       var hard=val('hard')==='1', chlor=val('chlor')==='1', src=val('src'), well=val('well')==='1';
       var head, msg, cta='';
-      var softenerCta='';
-      var filterCta='';
-      var comboCta='';
+      var softenerCta='<a class="btn btn-cta" href="/go/springwell-softener" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the softener →</a>';
+      var filterCta='<a class="btn btn-cta" href="/go/springwell-cf" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the whole-house filter →</a>';
+      var comboCta='<a class="btn btn-cta" href="/go/springwell-combo" rel="sponsored nofollow noopener" target="_blank" style="margin-top:.7rem">See the filter + softener combo →</a>';
       if(src==='well' && well){
         head='Treat your well water first';
         msg='Rusty water or a rotten-egg smell points to iron, sulfur, or manganese. Those need dedicated well treatment before a softener, or the resin will foul. Test first, then add softening.';
